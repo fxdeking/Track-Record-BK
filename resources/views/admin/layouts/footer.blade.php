@@ -34,7 +34,7 @@
     <script src="{{ asset('template/lib/tempusdominus/js/tempusdominus-bootstrap-4.min.js') }}"></script>
 
     <!-- Template Javascript -->
-    <script src="js/main.js"></script>
+    <script src="{{ asset('template/js/main.js') }}"></script>
 </body>
 
 </html>
