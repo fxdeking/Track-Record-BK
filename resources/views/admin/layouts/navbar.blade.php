@@ -1,4 +1,4 @@
-<!-- Content Start -->jpg
+<!-- Content Start -->
 <div class="content">
             <!-- Navbar Start -->
             <nav class="navbar navbar-expand bg-secondary navbar-dark sticky-top px-4 py-0">
