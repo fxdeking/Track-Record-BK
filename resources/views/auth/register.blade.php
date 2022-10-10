@@ -56,9 +56,9 @@
                             <h3>Sign Up</h3>
                         </div>
                         <div class="form-floating mb-3">
-                            <input type="text" id="floatingText" id="username" placeholder="jhondoe" class="form-control @error('username') is-invalid @enderror" name="username" value="{{ old('username') }}" required autocomplete="username" autofocus>
-                            <label for="floatingText">Username</label>
-                            @error('username')
+                            <input type="text" id="floatingText" id="Name" placeholder="jhondoe" class="form-control @error('Name') is-invalid @enderror" name="Name" value="{{ old('Name') }}" required autocomplete="Name" autofocus>
+                            <label for="floatingText">{{ __('Username') }}</label>
+                            @error('Name')
                                 <span class="invalid-feedback" role="alert">
                                     <strong>{{ $message }}</strong>
                                 </span>
@@ -66,7 +66,7 @@
                         </div>
                         <div class="form-floating mb-3">
                             <input id="email" type="email" class="form-control @error('email') is-invalid @enderror" name="email" value="{{ old('email') }}" id="floatingInput" placeholder="name@example.com" required autocomplete="email">
-                            <label for="floatingInput">Email address</label>
+                            <label for="floatingInput">{{ __('Email address') }}</label>
                             @error('email')
                                 <span class="invalid-feedback" role="alert">
                                     <strong>{{ $message }}</strong>
@@ -92,6 +92,73 @@
                     </div>
                     </form>
                 </div>
+            </div>
+        </div>
+        <!-- Sign Up End -->
+    </div>
+
+    <div class="container-fluid">
+            <div class="row h-100 align-items-center justify-content-center" style="min-height: 100vh;">
+                <div class="col-12 col-sm-8 col-md-6 col-lg-5 col-xl-4">
+                    <div class="bg-secondary rounded p-4 p-sm-5 my-4 mx-3">
+                    <form method="POST" action="{{ route('register') }}">
+                        @csrf
+                        <div class="d-flex align-items-center justify-content-between mb-3">
+                            <a href="#" class="">
+                                <h3 class="text-primary"><i class="fa fa-user-edit me-2"></i>Track Record BK</h3>
+                            </a>
+                            <h3>Sign Up</h3>
+                        </div>
+                        <div class="form-floating mb-3">
+                                <input id="floatingText" id="name" placeholder="name" type="text" class="form-control @error('name') is-invalid @enderror" name="name" value="{{ old('name') }}" required autocomplete="name" autofocus>
+                                <label for="floatingText">{{ __('Username') }}</label>
+                            @error('name')
+                                <span class="invalid-feedback" role="alert">
+                                    <strong>{{ $message }}</strong>
+                                </span>
+                            @enderror
+                        </div>
+
+                        <div class="form-floating mb-3">
+                                <input id="floatingText" id="email" placeholder="email" type="email" class="form-control @error('email') is-invalid @enderror" name="email" value="{{ old('email') }}" required autocomplete="email">
+                                    <label for="floatingInput">{{ __('Email address') }}</label>
+                            @error('email')
+                                <span class="invalid-feedback" role="alert">
+                                    <strong>{{ $message }}</strong>
+                                </span>
+                            @enderror
+                        </div>
+
+                        <div class="form-floating mb-4">
+                                <input id="floatingText" id="password" placeholder="email" type="password" class="form-control @error('password') is-invalid @enderror" name="password" required autocomplete="new-password">
+                                    <label for="floatingPassword">{{ __('Password') }}</label>
+                            @error('password')
+                                <span class="invalid-feedback" role="alert">
+                                    <strong>{{ $message }}</strong>
+                                </span>
+                            @enderror
+                        </div>
+
+                        <div class="row mb-3">
+                            <label for="password-confirm"
+                                class="col-md-4 col-form-label text-md-end">{{ __('Confirm Password') }}</label>
+
+                            <div class="col-md-6">
+                                <input id="password-confirm" type="password" class="form-control"
+                                    name="password_confirmation" required autocomplete="new-password">
+                            </div>
+                        </div>
+
+                        <div class="row mb-0">
+                            <div class="col-md-6 offset-md-4">
+                                <button type="submit" class="btn btn-primary">
+                                    {{ __('Register') }}
+                                </button>
+                            </div>
+                        </div>
+                        </div>
+                    </form>
+                    </div>
             </div>
         </div>
         <!-- Sign Up End -->
