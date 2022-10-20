@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="utf-8">
-    <title>Track Record BK Register</title>
+    <title>Track Record BK Daftar</title>
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
     <meta content="" name="keywords">
     <meta content="" name="description">
@@ -55,13 +55,13 @@
                                 <a href="#" class="">
                                     <h3 class="text-primary"><i class="fa fa-user-edit me-2"></i>Track Record BK</h3>
                                 </a>
-                                <h3>Sign Up</h3>
+                                <h3>Daftar</h3>
                             </div>
                             <div class="form-floating mb-3">
                                 <input id="floatingText" id="name" placeholder="name" type="text"
                                     class="form-control @error('name') is-invalid @enderror" name="name"
                                     value="{{ old('name') }}" required autocomplete="name" autofocus>
-                                <label for="floatingText">{{ __('Username') }}</label>
+                                <label for="floatingText">{{ __('Nama Lengkap') }}</label>
                                 @error('name')
                                 <span class="invalid-feedback" role="alert">
                                     <strong>{{ $message }}</strong>
@@ -73,7 +73,7 @@
                                 <input id="floatingText" id="email" placeholder="email" type="email"
                                     class="form-control @error('email') is-invalid @enderror" name="email"
                                     value="{{ old('email') }}" required autocomplete="email">
-                                <label for="floatingInput">{{ __('Email address') }}</label>
+                                <label for="floatingInput">{{ __('Email') }}</label>
                                 @error('email')
                                 <span class="invalid-feedback" role="alert">
                                     <strong>{{ $message }}</strong>
@@ -85,7 +85,7 @@
                                 <input id="floatingPassword" id="password" placeholder="password" type="password"
                                     class="form-control @error('password') is-invalid @enderror" name="password"
                                     required autocomplete="new-password">
-                                <label for="floatingPassword">{{ __('Password') }}</label>
+                                <label for="floatingPassword">{{ __('Sandi') }}</label>
                                 @error('password')
                                 <span class="invalid-feedback" role="alert">
                                     <strong>{{ $message }}</strong>
@@ -97,14 +97,13 @@
                                 <input id="floatingPassword" id="password-confirm" placeholder="Password Confirm"
                                     type="password" class="form-control" name="password_confirmation" required
                                     autocomplete="new-password">
-                                <label for="floatingPassword">{{ __('Confirm Password') }}</label>
+                                <label for="floatingPassword">{{ __('Konfirmasi Sandi') }}</label>
                             </div>
 
                             <button type="submit" class="btn btn-primary py-3 w-100 mb-4">
-                                {{ __('Sign Up') }}
+                                {{ __('Daftar') }}
                             </button>
-                            <p class="text-center mb-0">Already have an Account? <a href="{{ route('login') }}">Sign
-                                    In</a></p>
+                            <p class="text-center mb-0">Sudah Punya Akun? <a href="{{ route('login') }}">Masuk</a></p>
                     </div>
                     </form>
                 </div>

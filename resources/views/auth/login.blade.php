@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="utf-8">
-    <title>Track Record BK Login</title>
+    <title>Track Record BK Masuk</title>
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
     <meta content="" name="keywords">
     <meta content="" name="description">
@@ -56,11 +56,11 @@
                                 <h3 class="text-primary"><link href="{{ asset('gambar/trackrecordbklogo.jpeg') }}" rel="icon"> Track Record BK</h3>
                             </a>
                             <br>
-                            <h3>Sign In</h3>
+                            <h3>Masuk</h3>
                         </div>
                         <div class="form-floating mb-3">
                             <input id="email" type="email" class="form-control @error('email') is-invalid @enderror" name="email" value="{{ old('email') }}" id="floatingInput" placeholder="name@example.com" required autocomplete="email" autofocus>
-                            <label for="floatingInput">Email address</label>
+                            <label for="floatingInput">Email</label>
                             @error('email')
                                 <span class="invalid-feedback" role="alert">
                                     <strong>{{ $message }}</strong>
@@ -69,7 +69,7 @@
                         </div>
                         <div class="form-floating mb-4">
                             <input id="password" type="password" class="form-control @error('password') is-invalid @enderror" name="password" id="floatingPassword" required autocomplete="current-password" placeholder="Password" autofocus>
-                            <label for="floatingPassword">Password</label>
+                            <label for="floatingPassword">Sandi</label>
                             @error('password')
                                 <span class="invalid-feedback" role="alert">
                                     <strong>{{ $message }}</strong>
@@ -79,14 +79,11 @@
                         <div class="d-flex align-items-center justify-content-between mb-4">
                             <div class="form-check">
                                 <input class="form-check-input" type="checkbox" name="remember" id="remember" {{ old('remember') ? 'checked' : '' }} id="exampleCheck1">
-                                <label class="form-check-label" for="exampleCheck1">Remember Me</label>
+                                <label class="form-check-label" for="exampleCheck1">Ingat Saya</label>
                             </div>
-                            @if (Route::has('password.request'))
-                            <a href="{{ route('password.request') }}">Forgot Password</a>
-                            @endif
                         </div>
-                        <button type="submit" class="btn btn-primary py-3 w-100 mb-4">Sign In</button>
-                        <p class="text-center mb-0">Don't have an Account? <a href="{{ route('register') }}">Sign Up</a></p>
+                        <button type="submit" class="btn btn-primary py-3 w-100 mb-4">Masuk</button>
+                        <p class="text-center mb-0">Tidak Punya Akun? <a href="{{ route('register') }}">Daftar</a></p>
                     </div>
                     </form>
                 </div>
