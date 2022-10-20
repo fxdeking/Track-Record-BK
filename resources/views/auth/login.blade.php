@@ -41,6 +41,7 @@
         </div>
         <!-- Spinner End -->
 
+       <img src="{{ asset('gambar/bg login.jpg') }}" alt="" class="imglgn">
 
         <!-- Sign In Start -->
         <div class="container-fluid">

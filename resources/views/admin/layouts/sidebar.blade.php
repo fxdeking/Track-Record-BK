@@ -68,7 +68,7 @@
                             <a href="typography.html" class="dropdown-item">Data Konselor</a>
                         </div>
                     </div>
-                    <a href="form.html" class="nav-item nav-link"><i class="fa fa-keyboard me-2"></i>Form</a>
+                    <a href="{{ asset('template/form.html') }}" class="nav-item nav-link"><i class="fa fa-keyboard me-2"></i>Form</a>
                     <a href="widget.html" class="nav-item nav-link"><i class="fa fa-th me-2"></i>Widgets</a>
                     <a href="table.html" class="nav-item nav-link"><i class="fa fa-laptop me-2"></i>Tables</a>
                     <a href="chart.html" class="nav-item nav-link"><i class="fa fa-chart-bar me-2"></i>Charts</a>
