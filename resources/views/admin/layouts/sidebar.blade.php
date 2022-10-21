@@ -45,7 +45,7 @@
         <!-- Sidebar Start -->
         <div class="sidebar pe-4 pb-3">
             <nav class="navbar bg-secondary navbar-dark">
-                <a href="./" class="navbar-brand mx-4 mb-3">
+                <a href="#" class="navbar-brand mx-4 mb-3">
                 <link href="{{ asset('gambar/trackrecordbklogo.jpeg') }}" rel="icon">
                     <h3 class="text-primary">Track Record</h3>
                 </a>

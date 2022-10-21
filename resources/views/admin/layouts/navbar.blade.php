@@ -48,7 +48,8 @@
                                 </div>
                             </a>
                             <hr class="dropdown-divider">
-                            <a href="#" class="dropdown-item text-center">See all message</a>
+                            <a href="#" class="dropdown-item text-center">Tambah Catatan</a>
+                            <a href="#" class="dropdown-item text-center">Lihat Semua Catatan</a>
                         </div>
                     </div>
                     <div class="nav-item dropdown">
