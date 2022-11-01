@@ -45,7 +45,7 @@
         <!-- Sidebar Start -->
         <div class="sidebar pe-4 pb-3">
             <nav class="navbar bg-secondary navbar-dark">
-                <a href="#" class="navbar-brand mx-4 mb-3">
+                <a href="{{ route('dashboard') }}" class="navbar-brand mx-4 mb-3">
                 <link href="{{ asset('gambar/trackrecordbklogo.jpeg') }}" rel="icon">
                     <h3 class="text-primary">Track Record</h3>
                 </a>
@@ -60,7 +60,7 @@
                     </div>
                 </div>
                 <div class="navbar-nav w-100">
-                    <a href="#" class="nav-item nav-link active"><i class="fa fa-tachometer-alt me-2"></i>Beranda</a>
+                    <a href="{{ route('dashboard') }}" class="nav-item nav-link active"><i class="fa fa-tachometer-alt me-2"></i>Beranda</a>
                     <div class="nav-item dropdown">
                         <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown"><i class="fa fa-table me-2"></i> Data </a>
                         <div class="dropdown-menu bg-transparent border-0">

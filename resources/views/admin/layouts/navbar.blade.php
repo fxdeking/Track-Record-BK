@@ -48,8 +48,8 @@
                                 </div>
                             </a>
                             <hr class="dropdown-divider">
-                            <a href="#" class="dropdown-item text-center">Tambah Catatan</a>
-                            <a href="#" class="dropdown-item text-center">Lihat Semua Catatan</a>
+                            <a href="{{ route('catinput') }}" class="dropdown-item text-center">Tambah Catatan</a>
+                            <a href="{{ route('cat') }}" class="dropdown-item text-center">Lihat Semua Catatan</a>
                         </div>
                     </div>
                     <div class="nav-item dropdown">

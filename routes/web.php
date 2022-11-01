@@ -36,4 +36,9 @@ Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name
 
 Route::group(['prefix'=>'catatan'], function(){
     Route::get('/index', 'CatatanController@index')->name('cat')->middleware('auth');
+    Route::get('/input', 'CatatanController@input')->name('catinput')->middleware('auth');
+    Route::post('/tambah', 'CatatanController@tambah')->name('cattambah')->middleware('auth');
+    Route::get('/edit/{id}', 'CatatanController@edit')->name('catedit')->middleware('auth');
+    Route::post('/update/{id}', 'CatatanController@update')->name('catupdate')->middleware('auth');
+    Route::delete('/delete/{id}', 'CatatanController@delete')->name('catdelete')->middleware('auth');
 });
