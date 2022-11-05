@@ -23,6 +23,7 @@
     <!-- Libraries Stylesheet -->
     <link href="{{ asset('template/lib/owlcarousel/assets/owl.carousel.min.css') }}" rel="stylesheet">
     <link href="{{ asset('template/lib/tempusdominus/css/tempusdominus-bootstrap-4.min.css') }}" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 
     <!-- Customized Bootstrap Stylesheet -->
     <link href="{{ asset('template/css/bootstrap.min.css') }}" rel="stylesheet">
@@ -79,7 +80,7 @@
                             <a href="#5" class="dropdown-item">Form Kategori Keluhan</a>
                         </div>
                     </div>
-                    <a href="{{ asset('template/form.html') }}" class="nav-item nav-link"><i class="fa fa-keyboard me-2"></i>Jadwal Bertugas</a>
+                    <a href="{{ asset('template/form.html') }}" class="nav-item nav-link" style="width:211px;"><i class="fa fa-keyboard me-2"></i>Jadwal Bertugas</a>
                     <a href="{{ route('cat') }}" class="nav-item nav-link"><i class="fa fa-th me-2"></i>Catatan</a>
                     <!-- <a href="table.html" class="nav-item nav-link"><i class="fa fa-laptop me-2"></i>Tables</a>
                     <a href="chart.html" class="nav-item nav-link"><i class="fa fa-chart-bar me-2"></i>Charts</a> -->

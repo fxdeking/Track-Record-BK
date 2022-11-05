@@ -9,7 +9,7 @@
                     <i class="fa fa-bars"></i>
                 </a>
                 <form class="d-none d-md-flex ms-4">
-                    <input class="form-control bg-dark border-0" type="search" placeholder="Search">
+                    <input class="form-control bg-dark border-0" type="search" placeholder="Search" id='input' onkeyup='searchTable()'>
                 </form>
                 <div class="navbar-nav align-items-center ms-auto">
                     <div class="nav-item dropdown">
@@ -18,36 +18,21 @@
                             <span class="d-none d-lg-inline-flex">Catatan</span>
                         </a>
                         <div class="dropdown-menu dropdown-menu-end bg-secondary border-0 rounded-0 rounded-bottom m-0">
-                            <a href="#" class="dropdown-item">
+                        @if(count($catats)>0)
+                        @foreach ($catats as $catat)
                                 <div class="d-flex align-items-center">
                                     <img class="rounded-circle" src="{{ asset('template/img/user.jpg') }}" alt="" style="width: 40px; height: 40px;">
                                     <div class="ms-2">
-                                        <h6 class="fw-normal mb-0">Jhon send you a message</h6>
-                                        <small>15 minutes ago</small>
+                                        <h6 class="fw-normal mb-0">{{ $catat->nama }}</h6>
+                                        <small>{{ $catat->catatan }}</small>
                                     </div>
                                 </div>
                             </a>
                             <hr class="dropdown-divider">
-                            <a href="#" class="dropdown-item">
-                                <div class="d-flex align-items-center">
-                                    <img class="rounded-circle" src="{{ asset('template/img/user.jpg') }}" alt="" style="width: 40px; height: 40px;">
-                                    <div class="ms-2">
-                                        <h6 class="fw-normal mb-0">Jhon send you a message</h6>
-                                        <small>15 minutes ago</small>
-                                    </div>
-                                </div>
-                            </a>
-                            <hr class="dropdown-divider">
-                            <a href="#" class="dropdown-item">
-                                <div class="d-flex align-items-center">
-                                    <img class="rounded-circle" src="{{ asset('template/img/user.jpg') }}" alt="" style="width: 40px; height: 40px;">
-                                    <div class="ms-2">
-                                        <h6 class="fw-normal mb-0">Jhon send you a message</h6>
-                                        <small>15 minutes ago</small>
-                                    </div>
-                                </div>
-                            </a>
-                            <hr class="dropdown-divider">
+                        @endforeach
+                        @else
+                        <p>Tidak ada catatan.</p>
+                        @endif
                             <a href="{{ route('catinput') }}" class="dropdown-item text-center">Tambah Catatan</a>
                             <a href="{{ route('cat') }}" class="dropdown-item text-center">Lihat Semua Catatan</a>
                         </div>
