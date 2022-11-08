@@ -2,6 +2,7 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\CatatanController;
+use App\Http\Controllers\CampurController;
 
 /*
 |--------------------------------------------------------------------------
@@ -34,13 +35,17 @@ Auth::routes();
 
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home')->middleware('auth');
 
-Route::group(['prefix'=>'catatan'], ['middleware' => ['auth']], function(){
-    Route::get('/index', 'CatatanController@index')->name('cat');
-    Route::get('/input', 'CatatanController@input')->name('catinput');
-    Route::post('/tambah', 'CatatanController@tambah')->name('cattambah');
-    Route::get('/edit/{id}', 'CatatanController@edit')->name('catedit');
-    Route::post('/update/{id}', 'CatatanController@update')->name('catupdate');
-    Route::delete('/delete/{id}', 'CatatanController@delete')->name('catdelete');
+Route::group(['prefix'=>'catatan'], function(){
+    Route::get('/', 'CatatanController@index')->name('cat')->middleware('auth');
+    Route::get('/input', 'CatatanController@input')->name('catinput')->middleware('auth');
+    Route::post('/tambah', 'CatatanController@tambah')->name('cattambah')->middleware('auth');
+    Route::get('/edit/{id}', 'CatatanController@edit')->name('catedit')->middleware('auth');
+    Route::post('/update/{id}', 'CatatanController@update')->name('catupdate')->middleware('auth');
+    Route::delete('/delete/{id}', 'CatatanController@delete')->name('catdelete')->middleware('auth');
 });
 
-Route::get('/aboutus', 'CatatanController@aboutus')->name('aboutus')->middleware('auth');
+Route::get('/aboutus', 'CampurController@aboutus')->name('aboutus')->middleware('auth');
+
+Route::group(['prefix'=>'profil'], function(){
+    Route::get('/', 'CampurController@profil')->name('profil')->middleware('auth');
+});

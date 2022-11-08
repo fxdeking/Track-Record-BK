@@ -29,5 +29,8 @@ class AppServiceProvider extends ServiceProvider
     {
         $catats=DB::table('catatans')->get();
         View::share('catats',$catats);
+
+        $fotos=DB::table('users')->get();
+        View::share('fotos',$fotos);
     }
 }

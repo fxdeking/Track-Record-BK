@@ -67,7 +67,7 @@
                             <span class="d-none d-lg-inline-flex">{{ Auth::user()->name }}</span>
                         </a>
                         <div class="dropdown-menu dropdown-menu-end bg-secondary border-0 rounded-0 rounded-bottom m-0">
-                            <a href="#" class="dropdown-item"> Profil </a>
+                            <a href="{{ route('profil') }}" class="dropdown-item"> Profil </a>
                             <a href="{{ route('logout') }}" onclick="event.preventDefault(); document.getElementById('logout-form').submit();" class="dropdown-item">Keluar</a>
                             <form id="logout-form" action="{{ route('logout') }}" method="POST">@csrf</form>
                         </div>

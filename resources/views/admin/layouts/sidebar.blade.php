@@ -47,11 +47,15 @@
         <div class="sidebar pe-4 pb-3">
             <nav class="navbar bg-secondary navbar-dark">
                 <a href="{{ route('dashboard') }}" class="navbar-brand mb-3" style="display:flex;">
-                <img src="{{ asset('gambar/trackrecordbklogo.jpeg') }}" width="50px"><h3 class="text-primary" style="margin-top:10px;">&nbsp;Track Record</h3>
+                <img src="{{ asset('gambar/trackrecordbklogo.jpeg') }}" width="50px"><h3 class="text-primary" style="margin-top:10px;">&nbsp;&nbsp;Track Record</h3>
                 </a>
                 <div class="d-flex align-items-center ms-4 mb-4">
                     <div class="position-relative">
-                        <img class="rounded-circle" src="{{ asset('template/img/user.jpg') }}" alt="" style="width: 40px; height: 40px;">
+                    @if(count($fotos)>0)
+                        <img class="rounded-circle" src="{{ asset('foto/default.jpg') }}" alt="" style="width: 40px; height: 40px;">
+                    @else
+                        <img class="rounded-circle" src="{{ asset('foto/default.png') }}" alt="" style="width: 40px; height: 40px;">
+                    @endif
                         <div class="bg-success rounded-circle border border-2 border-white position-absolute end-0 bottom-0 p-1"></div>
                     </div>
                     <div class="ms-3">
