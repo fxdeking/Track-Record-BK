@@ -3,7 +3,7 @@
                 <div class="bg-secondary rounded-top p-4">
                     <div class="row">
                             <center>
-                            &copy; <a href="#">Track Record BK - Cinta Kasih Tzu Chi</a>, All Right Reserved.
+                            &copy; <a href="{{ route('aboutus') }}">Track Record BK - Cinta Kasih Tzu Chi</a>, All Right Reserved.
                             </center>
                     </div>
                 </div>

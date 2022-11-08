@@ -63,4 +63,8 @@ class CatatanController extends Controller
         $catat->delete();
         return redirect()->route('cat')->with('message', 'Catatan Berhasil Dihapus');
     }
+
+    public function aboutus() {
+        return view ('aboutus.index');
+    }
 }

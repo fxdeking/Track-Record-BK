@@ -42,3 +42,5 @@ Route::group(['prefix'=>'catatan'], function(){
     Route::post('/update/{id}', 'CatatanController@update')->name('catupdate')->middleware('auth');
     Route::delete('/delete/{id}', 'CatatanController@delete')->name('catdelete')->middleware('auth');
 });
+
+Route::get('/aboutus', 'CatatanController@aboutus')->name('aboutus')->middleware('auth');

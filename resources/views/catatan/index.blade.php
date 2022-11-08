@@ -26,7 +26,7 @@
                         <td style="text-align:center;">{{ $catat->nama }}</td>
                         <td style="text-align:center;">{{ $catat->catatan }}</td>
                         <td style="text-align:center;"><a class="btn btn-sm btn-primary" href="{{ route('catedit', [$catat->id]) }}">Ubah</a></td>
-                        <td style="text-align:center;"><button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal{{$catat->id}}">Hapus</button></td>
+                        <td style="text-align:center;"><button type="button" class="btn btn-sm btn-primary" data-toggle="modal" data-target="#exampleModal{{$catat->id}}">Hapus</button></td>
                     </tr>
 
                     <div class="modal fade" id="exampleModal{{$catat->id}}" tabindex="-1" role="dialog"

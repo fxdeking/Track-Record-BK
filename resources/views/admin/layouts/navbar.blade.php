@@ -9,7 +9,7 @@
                     <i class="fa fa-bars"></i>
                 </a>
                 <form class="d-none d-md-flex ms-4">
-                    <input class="form-control bg-dark border-0" type="search" placeholder="Search" id='input' onkeyup='searchTable()'>
+                    <input class="form-control bg-dark border-0" type="search" placeholder="Cari" id='input' onkeyup='searchTable()'>
                 </form>
                 <div class="navbar-nav align-items-center ms-auto">
                     <div class="nav-item dropdown">
@@ -17,10 +17,10 @@
                             <i class="fa fa-envelope me-lg-2"></i>
                             <span class="d-none d-lg-inline-flex">Catatan</span>
                         </a>
-                        <div class="dropdown-menu dropdown-menu-end bg-secondary border-0 rounded-0 rounded-bottom m-0">
+                        <div class="dropdown-menu dropdown-menu-end bg-secondary border-0 rounded-0 rounded-bottom m-0" style="max-height:165px;overflow-y: scroll;">
                         @if(count($catats)>0)
                         @foreach ($catats as $catat)
-                                <div class="d-flex align-items-center">
+                                <div class="d-flex align-items-center" style="padding:0 15px 0 15px;width:250px;">
                                     <img class="rounded-circle" src="{{ asset('template/img/user.jpg') }}" alt="" style="width: 40px; height: 40px;">
                                     <div class="ms-2">
                                         <h6 class="fw-normal mb-0">{{ $catat->nama }}</h6>
@@ -38,7 +38,7 @@
                         </div>
                     </div>
                     <div class="nav-item dropdown">
-                        <a href="about" class="nav-link">
+                        <a href="{{ route('aboutus') }}" class="nav-link">
                             <i class="fa fa-user me-lg-2"></i>
                             <span class="d-none d-lg-inline-flex">Tentang kami</span>
                         </a>

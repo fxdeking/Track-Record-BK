@@ -46,9 +46,8 @@
         <!-- Sidebar Start -->
         <div class="sidebar pe-4 pb-3">
             <nav class="navbar bg-secondary navbar-dark">
-                <a href="{{ route('dashboard') }}" class="navbar-brand mx-4 mb-3">
-                <link href="{{ asset('gambar/trackrecordbklogo.jpeg') }}" rel="icon">
-                    <h3 class="text-primary">Track Record</h3>
+                <a href="{{ route('dashboard') }}" class="navbar-brand mb-3" style="display:flex;">
+                <img src="{{ asset('gambar/trackrecordbklogo.jpeg') }}" width="50px"><h3 class="text-primary" style="margin-top:10px;">&nbsp;Track Record</h3>
                 </a>
                 <div class="d-flex align-items-center ms-4 mb-4">
                     <div class="position-relative">
