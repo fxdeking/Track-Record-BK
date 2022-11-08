@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Waktu pembuatan: 06 Okt 2022 pada 09.21
+-- Waktu pembuatan: 08 Nov 2022 pada 12.56
 -- Versi server: 10.4.17-MariaDB
 -- Versi PHP: 7.4.27
 
@@ -20,6 +20,33 @@ SET time_zone = "+00:00";
 --
 -- Database: `trackrecordbk`
 --
+
+-- --------------------------------------------------------
+
+--
+-- Struktur dari tabel `catatans`
+--
+
+CREATE TABLE `catatans` (
+  `id` bigint(20) UNSIGNED NOT NULL,
+  `nama` varchar(35) COLLATE utf8mb4_unicode_ci NOT NULL,
+  `catatan` varchar(100) COLLATE utf8mb4_unicode_ci NOT NULL,
+  `created_at` timestamp NULL DEFAULT NULL,
+  `updated_at` timestamp NULL DEFAULT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+
+--
+-- Dumping data untuk tabel `catatans`
+--
+
+INSERT INTO `catatans` (`id`, `nama`, `catatan`, `created_at`, `updated_at`) VALUES
+(6, 'sdfsfs', 'fdsfdsff123', '2022-11-04 23:50:19', '2022-11-05 01:45:44'),
+(8, 'asdfdsaf', 'sdafdsa', '2022-11-04 23:55:16', '2022-11-04 23:55:16'),
+(9, 'sdfsdf', 'asdfdsa', '2022-11-04 23:56:08', '2022-11-04 23:56:08'),
+(10, 'sdfsdf', 'sdfads', '2022-11-04 23:58:39', '2022-11-04 23:58:39'),
+(12, 'sdfdsf', 'sdfsdf', '2022-11-04 23:59:44', '2022-11-04 23:59:44'),
+(13, 'dfgdf', 'gdfgdf', '2022-11-05 00:01:29', '2022-11-05 00:01:29'),
+(15, 'asdsd', 'asdasd', '2022-11-05 00:03:57', '2022-11-05 00:03:57');
 
 -- --------------------------------------------------------
 
@@ -56,7 +83,8 @@ CREATE TABLE `migrations` (
 INSERT INTO `migrations` (`id`, `migration`, `batch`) VALUES
 (1, '2014_10_12_000000_create_users_table', 1),
 (2, '2014_10_12_100000_create_password_resets_table', 1),
-(3, '2019_08_19_000000_create_failed_jobs_table', 1);
+(3, '2019_08_19_000000_create_failed_jobs_table', 1),
+(4, '2022_10_27_003445_create_catatans_table', 2);
 
 -- --------------------------------------------------------
 
@@ -92,11 +120,17 @@ CREATE TABLE `users` (
 --
 
 INSERT INTO `users` (`id`, `name`, `email`, `email_verified_at`, `password`, `remember_token`, `created_at`, `updated_at`) VALUES
-(1, 'testes', 'tes@gmail.com', NULL, '$2y$10$a5sJEUBwKrs2zJmBfOe8s.qTZsjCr0mjzkpMLjNdwhMwMm89B4WaS', NULL, '2022-10-05 19:09:51', '2022-10-05 19:09:51');
+(1, 'Hendy', 'hendytandika25@gmail.com', NULL, '$2y$10$aWTDfV4gv6wNI/pZxL/omeTFC3ik8Y6d6IEuQZanEs3hdh6C0WyT2', NULL, '2022-10-31 23:23:43', '2022-10-31 23:23:43');
 
 --
 -- Indexes for dumped tables
 --
+
+--
+-- Indeks untuk tabel `catatans`
+--
+ALTER TABLE `catatans`
+  ADD PRIMARY KEY (`id`);
 
 --
 -- Indeks untuk tabel `failed_jobs`
@@ -129,6 +163,12 @@ ALTER TABLE `users`
 --
 
 --
+-- AUTO_INCREMENT untuk tabel `catatans`
+--
+ALTER TABLE `catatans`
+  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=17;
+
+--
 -- AUTO_INCREMENT untuk tabel `failed_jobs`
 --
 ALTER TABLE `failed_jobs`
@@ -138,7 +178,7 @@ ALTER TABLE `failed_jobs`
 -- AUTO_INCREMENT untuk tabel `migrations`
 --
 ALTER TABLE `migrations`
-  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
+  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
 
 --
 -- AUTO_INCREMENT untuk tabel `users`
