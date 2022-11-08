@@ -66,17 +66,17 @@
                         <div class="dropdown-menu bg-transparent border-0">
                             <a href="#1" class="dropdown-item">Data Pengunjung</a>
                             <a href="#2" class="dropdown-item">Data Konselor</a>
-                            <a href="#3" class="dropdown-item">Data Laporan Keluhan</a>
+                            <a href="#3" class="dropdown-item" style="width:220px;">Data Laporan Keluhan</a>
                         </div>
                     </div>
                     <div class="nav-item dropdown">
                         <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown"><i class="far fa-file-alt me-2"></i>Form</a>
                         <div class="dropdown-menu bg-transparent border-0">
-                            <a href="#1" class="dropdown-item">Form Data Pengunjung</a>
-                            <a href="#2" class="dropdown-item">Form Data Konselor</a>
-                            <a href="#3" class="dropdown-item">Form Data Laporan Keluhan</a>
-                            <a href="#4" class="dropdown-item">Form Jam Bertugas</a>
-                            <a href="#5" class="dropdown-item">Form Kategori Keluhan</a>
+                            <a href="#1" class="dropdown-item" style="width:230px;">Form Data Pengunjung</a>
+                            <a href="#2" class="dropdown-item" style="width:230px;">Form Data Konselor</a>
+                            <a href="#3" class="dropdown-item" style="width:240px;">Form Data Laporan Keluhan</a>
+                            <a href="#4" class="dropdown-item" style="width:230px;">Form Jam Bertugas</a>
+                            <a href="#5" class="dropdown-item" style="width:230px;">Form Kategori Keluhan</a>
                         </div>
                     </div>
                     <a href="{{ asset('template/form.html') }}" class="nav-item nav-link" style="width:211px;"><i class="fa fa-keyboard me-2"></i>Jadwal Bertugas</a>
