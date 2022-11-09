@@ -14,8 +14,8 @@
             <table class="table align-middle table-hover mb-0">
                 <thead>
                     <tr class="text-white">
-                        <th scope="col" style="text-align:center;width:15%;">Nama</th>
-                        <th scope="col" style="text-align:center;">Catatan</th>
+                        <th scope="col" style="text-align:center;width:15%;">Nama Pencatat</th>
+                        <th scope="col" style="text-align:center;">Isi Catatan</th>
                         <th scope="col" colspan="2" style="text-align:center;width:1%;">Aksi</th>
                     </tr>
                 </thead>
@@ -34,10 +34,10 @@
                         <div class="modal-dialog" role="document">
                             <form action="{{ route('catdelete', [$catat->id]) }}" method="POST">@csrf
                                 {{method_field('DELETE')}}
-                                <div class="modal-content">
+                                <div class="modal-content bg-secondary bg-gradient">
                                     <div class="modal-header" style="display:flex;">
                                         <h5 class="modal-title" id="exampleModalLabel">Hapus Catatan</h5>
-                                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                        <button type="button" class="close text-white" data-dismiss="modal" aria-label="Close">
                                             <span aria-hidden="true">&times;</span>
                                         </button>
                                     </div>

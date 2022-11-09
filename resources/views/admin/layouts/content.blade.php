@@ -33,7 +33,7 @@
                             <i class="fa fa-chart-pie fa-3x text-primary"></i>
                             <div class="ms-3">
                                 <p class="mb-2">Catatan</p>
-                                <h6 class="mb-0">10</h6>
+                                <h6 class="mb-0">{{ $catats->count() }}</h6>
                             </div>
                         </div>
                     </div>
