@@ -51,8 +51,8 @@
                 </a>
                 <div class="d-flex align-items-center ms-4 mb-4">
                     <div class="position-relative">
-                    @if(count($fotos)>0)
-                        <img class="rounded-circle" src="{{ asset('foto/default.jpg') }}" alt="" style="width: 40px; height: 40px;">
+                    @if( Auth::user()->foto !== 'default.png')
+                        <img class="rounded-circle" src="{{ asset('foto') }}/{{ Auth::user()->foto }}" alt="" style="width: 40px; height: 40px;">
                     @else
                         <img class="rounded-circle" src="{{ asset('foto/default.png') }}" alt="" style="width: 40px; height: 40px;">
                     @endif
