@@ -55,7 +55,7 @@ class ProfilController extends Controller
 
     public function updatefoto(Request $request, $id) {
         $this->validate($request,[
-            'gambar'=>'mimes:png,jpeg,jpg'
+            'foto'=>'mimes:png,jpeg,jpg'
         ]);
 
         $user = User::find($id);
