@@ -122,10 +122,10 @@
                             <img class="img-fluid rounded" src="img/bk3.jpg">
                         </div>
                         <div class="col-6 wow fadeIn" data-wow-delay="0.3s">
-                            <img class="img-fluid rounded" src="img/bk2.jpg">
+                            <img class="img-fluid rounded" src="img/bk22.jpg">
                         </div>
                         <div class="col-6 wow fadeIn" data-wow-delay="0.5s">
-                            <img class="img-fluid rounded" src="img/bk11.jpg">
+                            <img class="img-fluid rounded" src="img/deket-bk.jpg">
                         </div>
                     </div>
                 </div>
@@ -140,7 +140,7 @@
                             <span>pada prinsipnya merupakan pemberian pertolongan atau bantuan. Bimbingan merupakan suatu tuntunan, artinya bahwa dalam memberikan bimbingan, sang pembimbing harus memberikan arahan.</span>
                         </div>
                         <div class="col-sm-6">
-                            <img class="img-fluid mb-4" src="img/product.png" alt="">
+                            <img class="img-fluid mb-4" src="img/award.png" alt="">
                             <h5 class="mb-3">Konseling</h5>
                             <span>merupakan bantuan yang diberikan kepada individu atau kelompok untuk menyelesaikan suatu masalah melalui wawancara dengan cara yang sesuai dengan keadaan yang tengah dihadapi untuk mencapai kesejahteraan dalam hidup.</span>
                         </div>
@@ -170,29 +170,29 @@
                             <div class="col-sm-6 wow fadeIn" data-wow-delay="0.1s">
                                 <div class="text-center bg-primary py-5 px-4">
                                     <img class="img-fluid mb-4" src="img/experience.png" alt="">
-                                    <h1 class="display-6 text-white" data-toggle="counter-up">25</h1>
-                                    <span class="fs-5 fw-semi-bold text-secondary">Years Experience</span>
+                                    <h1 class="display-6 text-white" data-toggle="counter-up">22.6</h1>
+                                    <span class="fs-5 fw-semi-bold text-secondary">Anak sekolah mengalami gejala depresi </span>
                                 </div>
                             </div>
                             <div class="col-sm-6 wow fadeIn" data-wow-delay="0.3s">
                                 <div class="text-center bg-secondary py-5 px-4">
                                     <img class="img-fluid mb-4" src="img/award.png" alt="">
-                                    <h1 class="display-6" data-toggle="counter-up">183</h1>
-                                    <span class="fs-5 fw-semi-bold text-primary">Award Winning</span>
+                                    <h1 class="display-6" data-toggle="counter-up">18.9</h1>
+                                    <span class="fs-5 fw-semi-bold text-primary">Anak sekolah mengalami gangguan kecemasan</span>
                                 </div>
                             </div>
                             <div class="col-sm-6 wow fadeIn" data-wow-delay="0.5s">
                                 <div class="text-center bg-secondary py-5 px-4">
-                                    <img class="img-fluid mb-4" src="img/animal.png" alt="">
-                                    <h1 class="display-6" data-toggle="counter-up">2619</h1>
-                                    <span class="fs-5 fw-semi-bold text-primary">Total Animals</span>
+                                    <img class="img-fluid mb-4" src="img/service.png" alt="">
+                                    <h1 class="display-6" data-toggle="counter-up"> 2.330</h1>
+                                    <span class="fs-5 fw-semi-bold text-primary">Sampel anak sekolah yang diambil untuk penelitian</span>
                                 </div>
                             </div>
                             <div class="col-sm-6 wow fadeIn" data-wow-delay="0.7s">
                                 <div class="text-center bg-primary py-5 px-4">
                                     <img class="img-fluid mb-4" src="img/client.png" alt="">
-                                    <h1 class="display-6 text-white" data-toggle="counter-up">51940</h1>
-                                    <span class="fs-5 fw-semi-bold text-secondary">Happy Clients</span>
+                                    <h1 class="display-6 text-white" data-toggle="counter-up">14.3</h1>
+                                    <span class="fs-5 fw-semi-bold text-secondary">Orang tua melaporkan memburuknya perilaku anak</span>
                                 </div>
                             </div>
                         </div>
@@ -214,7 +214,7 @@
                     <div class="col-md-6 col-lg-4 col-xl-3 wow fadeInUp" data-wow-delay="0.1s">
                         <div class="product-item">
                             <div class="position-relative">
-                                <img class="img-fluid" src="img/product-1.jpg" alt="">
+                                <img class="img-fluid" src="img/fungsi1.jpeg" alt="">
                                 <div class="product-overlay">
                                     <a class="btn btn-square btn-secondary rounded-circle m-1" href=""><i class="bi bi-link"></i></a>
                                     <a class="btn btn-square btn-secondary rounded-circle m-1" href=""><i class="bi bi-cart"></i></a>
@@ -229,7 +229,7 @@
                     <div class="col-md-6 col-lg-4 col-xl-3 wow fadeInUp" data-wow-delay="0.3s">
                         <div class="product-item">
                             <div class="position-relative">
-                                <img class="img-fluid" src="img/product-2.jpg" alt="">
+                                <img class="img-fluid" src="img/fungsi2.jpeg" alt="">
                                 <div class="product-overlay">
                                     <a class="btn btn-square btn-secondary rounded-circle m-1" href=""><i class="bi bi-link"></i></a>
                                     <a class="btn btn-square btn-secondary rounded-circle m-1" href=""><i class="bi bi-cart"></i></a>
@@ -244,7 +244,7 @@
                     <div class="col-md-6 col-lg-4 col-xl-3 wow fadeInUp" data-wow-delay="0.5s">
                         <div class="product-item">
                             <div class="position-relative">
-                                <img class="img-fluid" src="img/product-3.jpg" alt="">
+                                <img class="img-fluid" src="img/fungsi3.jpeg" alt="">
                                 <div class="product-overlay">
                                     <a class="btn btn-square btn-secondary rounded-circle m-1" href=""><i class="bi bi-link"></i></a>
                                     <a class="btn btn-square btn-secondary rounded-circle m-1" href=""><i class="bi bi-cart"></i></a>
@@ -258,7 +258,7 @@
                     <div class="col-md-6 col-lg-4 col-xl-3 wow fadeInUp" data-wow-delay="0.7s">
                         <div class="product-item">
                             <div class="position-relative">
-                                <img class="img-fluid" src="img/product-4.jpg" alt="">
+                                <img class="img-fluid" src="img/fungsi4.jpeg" alt="">
                                 <div class="product-overlay">
                                     <a class="btn btn-square btn-secondary rounded-circle m-1" href=""><i class="bi bi-link"></i></a>
                                     <a class="btn btn-square btn-secondary rounded-circle m-1" href=""><i class="bi bi-cart"></i></a>
