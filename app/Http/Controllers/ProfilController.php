@@ -3,6 +3,8 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Hash;
+use App\Rules\MatchOldPassword;
 use App\Models\User;
 
 class ProfilController extends Controller
@@ -70,6 +72,19 @@ class ProfilController extends Controller
         $user->foto = $name;
         $user->save();
     
-        return redirect()->route('profil')->with('message', 'Foto profil berhasil diubah');
+        return redirect()->route('profil')->with('message', 'Foto Profil Berhasil Diubah');
+    }
+
+    public function updatepassword(Request $request)
+    {
+        $request->validate([
+            'current_password' => ['required', new MatchOldPassword],
+            'new_password' => ['required'],
+            'new_confirm_password' => ['same:new_password'],
+        ], ['new_confirm_password.same'=>'Kata sandi konfirmasi harus persis dengan kata sandi baru']);
+   
+        User::find(auth()->user()->id)->update(['password'=> Hash::make($request->new_password)]);
+   
+        return redirect()->route('profil')->with('message', 'Password Berhasil Diubah');
     }
 }

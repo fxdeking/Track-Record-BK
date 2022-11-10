@@ -68,7 +68,7 @@
                             @enderror
                         </div>
                         <div class="form-floating mb-4">
-                            <input id="password" type="password" class="form-control @error('password') is-invalid @enderror" name="password" id="floatingPassword" required autocomplete="current-password" placeholder="Password" autofocus>
+                            <input id="password" type="password" class="form-control @error('password') is-invalid @enderror" name="password" id="floatingPassword" required autocomplete="current-password" placeholder="Kata Sandi" autofocus>
                             <label for="floatingPassword">Sandi</label>
                             @error('password')
                                 <span class="invalid-feedback" role="alert">

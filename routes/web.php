@@ -57,4 +57,5 @@ Route::group(['prefix'=>'profil'], function(){
     Route::post('/updateemail/{id}', 'ProfilController@updateemail')->name('profilupdateemail')->middleware('auth');
     Route::post('/updatetelepon/{id}', 'ProfilController@updatetelepon')->name('profilupdatetelepon')->middleware('auth');
     Route::post('/updatefoto/{id}', 'ProfilController@updatefoto')->name('profilupdatefoto')->middleware('auth');
+    Route::post('/updatepassword', 'ProfilController@updatepassword')->name('profilupdatepassword')->middleware('auth');
 });

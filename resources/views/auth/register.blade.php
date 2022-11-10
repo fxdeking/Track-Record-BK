@@ -82,7 +82,7 @@
                             </div>
 
                             <div class="form-floating mb-4">
-                                <input id="floatingPassword" id="password" placeholder="password" type="password"
+                                <input id="floatingPassword" id="password" placeholder="Kata Sandi" type="password"
                                     class="form-control @error('password') is-invalid @enderror" name="password"
                                     required autocomplete="new-password">
                                 <label for="floatingPassword">{{ __('Sandi') }}</label>
