@@ -14,22 +14,22 @@
     <!-- Google Web Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="{{ asset('https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@700&family=Open+Sans:wght@400;500;600&display=swap')}}" rel="stylesheet">   
+    <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@700&family=Open+Sans:wght@400;500;600&display=swap" rel="stylesheet">   
 
     <!-- Icon Font Stylesheet -->
-    <link href="{{ asset('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css2/all.min.css')}}" rel="stylesheet">
-    <link href="{{ asset('https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css')}}" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
 
     <!-- Libraries Stylesheet -->
-    <link href="{{ asset('lib/animate/animate.min.css')}}" rel="stylesheet">
-    <link href="{{ asset('lib/owlcarousel/assets/owl.carousel.min.css')}}" rel="stylesheet">
-    <link href="{{ asset('lib/lightbox/css2/lightbox.min.css')}}" rel="stylesheet">
+    <link href="lib/animate/animate.min.css" rel="stylesheet">
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+    <link href="lib/lightbox/css/lightbox.min.css" rel="stylesheet">
 
     <!-- Customized Bootstrap Stylesheet -->
-    <link href="{{ asset('css2/bootstrap.min.css')}}" rel="stylesheet">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
 
     <!-- Template Stylesheet -->
-    <link href="{{ asset('css2/style.css')}}" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
 </head>
 
 <body>
@@ -67,13 +67,13 @@
         <div id="header-carousel" class="carousel slide" data-bs-ride="carousel">
             <div class="carousel-inner">
                 <div class="carousel-item active">
-                    <img class="w-100" src="gambar/gedung-tzuchi.jpg" alt="Image">
+                    <img class="w-100" src="img/guru-bk.jpg" alt="Image">
                     <div class="carousel-caption">
                         <div class="container">
                             <div class="row justify-content-start">
                                 <div class="col-lg-8 text-start">
-                                    <p class="fs-4 text-white">Welcome to our dairy farm</p>
-                                    <h1 class="display-1 text-white mb-5 animated slideInRight">The Farm of Dairy products</h1>
+                                    <p class="fs-4 text-white">Selamat datang ke website</p>
+                                    <h1 class="display-1 text-white mb-5 animated slideInRight">Bimbingan Konselimg</h1>
                                     <a href="" class="btn btn-secondary rounded-pill py-3 px-5 animated slideInRight">Explore More</a>
                                 </div>
                             </div>
@@ -81,13 +81,13 @@
                     </div>
                 </div>
                 <div class="carousel-item">
-                    <img class="w-100" src="img/deket-bk.jpg" alt="Image">
+                    <img class="w-100" src="img/gedung-tzuchi.jpg" alt="Image">
                     <div class="carousel-caption">
                         <div class="container">
                             <div class="row justify-content-end">
                                 <div class="col-lg-8 text-end">
-                                    <p class="fs-4 text-white">Welcome to our dairy farm</p>
-                                    <h1 class="display-1 text-white mb-5 animated slideInRight">Best Organic Dairy Products</h1>
+                                    <p class="fs-4 text-white">Berfokus pada</p>
+                                    <h1 class="display-1 text-white mb-5 animated slideInRight">pengembangan perilaku baik siswa</h1>
                                     <a href="" class="btn btn-secondary rounded-pill py-3 px-5 animated slideInLeft">Explore More</a>
                                 </div>
                             </div>
@@ -123,13 +123,13 @@
                             </div>
                         </div>
                         <div class="col-6 wow fadeIn" data-wow-delay="0.1s">
-                            <img class="img-fluid rounded" src="img/tzuchi.jpg">
+                            <img class="img-fluid rounded" src="img/bk1.jpg">
                         </div>
                         <div class="col-6 wow fadeIn" data-wow-delay="0.3s">
-                            <img class="img-fluid rounded" src="img/service-2.jpg">
+                            <img class="img-fluid rounded" src="img/bk2.jpg">
                         </div>
                         <div class="col-6 wow fadeIn" data-wow-delay="0.5s">
-                            <img class="img-fluid rounded" src="img/service-3.jpg">
+                            <img class="img-fluid rounded" src="img/bk3.jpg">
                         </div>
                     </div>
                 </div>
@@ -161,12 +161,11 @@
         <div class="container">
             <div class="row g-5 align-items-center">
                 <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.1s">
-                    <p class="section-title bg-white text-start text-primary pe-3">Why Us!</p>
-                    <h1 class="mb-4">Few Reasons Why People Choosing Us!</h1>
-                    <p class="mb-4">Tempor erat elitr rebum at clita. Diam dolor diam ipsum sit. Aliqu diam amet diam et eos. Clita erat ipsum et lorem et sit, sed stet lorem sit clita duo justo magna dolore erat amet</p>
-                    <p><i class="fa fa-check text-primary me-3"></i>Justo magna erat amet</p>
-                    <p><i class="fa fa-check text-primary me-3"></i>Aliqu diam amet diam et eos</p>
-                    <p><i class="fa fa-check text-primary me-3"></i>Clita erat ipsum et lorem et sit</p>
+                    <p class="section-title bg-white text-start text-primary pe-3">Bimbingan Konseling</p>
+                    <h1 class="mb-4">Tujuan</h1>
+                    <p><i class="fa fa-check text-primary me-3"></i>Merencanakan kegiatan penyelesaian studi, perkembangan karir, dan juga kehidupan peserta didik di masa depan.</p>
+                    <p><i class="fa fa-check text-primary me-3"></i>Menyesuaikan diri dengan lingkungan pendidikan dan juga lingkungan masyarakat</p>
+                    <p><i class="fa fa-check text-primary me-3"></i>Mengetahui kesulitan dan juga hambatan yang dihadapi oleh siswa dalam studi, penyesuaian diri dengan lingkungan pendidikan yang ada di masyarakat</p>
                     <a class="btn btn-secondary rounded-pill py-3 px-5 mt-3" href="">Explore More</a>
                 </div>
                 <div class="col-lg-6">
@@ -208,9 +207,8 @@
     </div>
     <!-- Features End -->
 
-
     <!-- Banner Start -->
-    <div class="container-fluid banner my-5 py-5" data-parallax="scroll" data-image-src="img/banner.jpg">
+    <div class="container-fluid banner my-5 py-5" data-parallax="scroll" data-image-src="img/gedung-tzuchi.jpg">
         <div class="container py-5">
             <div class="row g-5">
                 <div class="col-lg-6 wow fadeIn" data-wow-delay="0.3s">
@@ -260,8 +258,8 @@
                             <div class="service-icon">
                                 <img class="img-fluid rounded-circle" src="img/syamsuyusuf.jpg" alt="">
                             </div>
-                            <h5 class="mb-3">Syamsu Yusuf (2009)</h4>
-                            <p class="mb-4">Menurut Syamsu Yusuf, bimbingan konseling adalah proses pemberian bantuan konselor kepada para individu atau konseli secara berkesinambungan supaya bisa memahami potensi yang ada di dalam diri dan juga lingkungannya, menerima diri sendiri, mengembangkan diri secara maksimal, dan menyesuaikan diri secara positif.</p>
+                            <h5 class="mb-3">Syamsu Yusuf</h4>
+                            <p class="mb-4">proses pemberian bantuan konselor kepada para individu atau konseli secara berkesinambungan supaya bisa memahami potensi yang ada di dalam diri dan juga lingkungannya, menerima diri sendiri, mengembangkan diri secara maksimal, dan menyesuaikan diri secara positif.</p>
                             <a class="btn btn-square rounded-circle" href=""><i class="bi bi-chevron-double-right"></i></a>
                         </div>
                     </div>
@@ -269,14 +267,14 @@
                 <div class="col-lg-4 col-md-6 pt-5 wow fadeInUp" data-wow-delay="0.3s">
                     <div class="service-item d-flex h-100">
                         <div class="service-img">
-                            <img class="img-fluid" src="img/service-2.jpg" alt="">
+                            <img class="img-fluid" src="img/frank2.jpg" alt="">
                         </div>
                         <div class="service-text p-5 pt-0">
                             <div class="service-icon">
-                                <img class="img-fluid rounded-circle" src="img/service-2.jpg" alt="">
+                                <img class="img-fluid rounded-circle" src="img/frank parson.jpeg" alt="">
                             </div>
-                            <h5 class="mb-3">Breeding & Veterinary</h5>
-                            <p class="mb-4">Erat ipsum justo amet duo et elitr dolor, est duo duo eos lorem sed diam stet diam sed stet.</p>
+                            <h5 class="mb-3">Frank Parson</h5>
+                            <p class="mb-4">Bimbingan sebagai bantuan yang diberikan kepada individu untuk dapat memilih, mempersiapkan diri dan memangku suatu jabatan dan mendapat kemajuan dalam jabatan yang dipilihnya.</p>
                             <a class="btn btn-square rounded-circle" href=""><i class="bi bi-chevron-double-right"></i></a>
                         </div>
                     </div>
@@ -284,14 +282,14 @@
                 <div class="col-lg-4 col-md-6 pt-5 wow fadeInUp" data-wow-delay="0.5s">
                     <div class="service-item d-flex h-100">
                         <div class="service-img">
-                            <img class="img-fluid" src="img/service-3.jpg" alt="">
+                            <img class="img-fluid" src="img/kemendikbud.png" alt="">
                         </div>
                         <div class="service-text p-5 pt-0">
                             <div class="service-icon">
-                                <img class="img-fluid rounded-circle" src="img/service-3.jpg" alt="">
+                                <img class="img-fluid rounded-circle" src="img/nadiem.jpg" alt="">
                             </div>
-                            <h5 class="mb-3">Care & Milking</h5>
-                            <p class="mb-4">Erat ipsum justo amet duo et elitr dolor, est duo duo eos lorem sed diam stet diam sed stet.</p>
+                            <h5 class="mb-3">Menteri Pendidikan dan Kebudayaan</h5>
+                            <p class="mb-4">suatu upaya sistematis, logis, objektif, dan juga berkelanjutan serta terprogram yang dilakukan oleh para konselor atau guru bimbingan dan konseling</p>
                             <a class="btn btn-square rounded-circle" href=""><i class="bi bi-chevron-double-right"></i></a>
                         </div>
                     </div>
@@ -450,36 +448,11 @@
                 <p class="section-title bg-white text-center text-primary px-3">Staf Kami</p>
                 <h1 class="mb-5">Guru BK</h1>
             </div>
-            <div class="row g-4">
-                <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
+                <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
                     <div class="team-item rounded p-4">
                         <img class="img-fluid rounded mb-4" src="img/pakrizky.jpg" alt="">
                         <h5>Pak Rizky</h5>
-                        <p class="text-primary">Founder</p>
-                        <div class="d-flex justify-content-center">
-                            <a class="btn btn-square btn-outline-secondary rounded-circle mx-1" href=""><i class="fab fa-facebook-f"></i></a>
-                            <a class="btn btn-square btn-outline-secondary rounded-circle mx-1" href=""><i class="fab fa-twitter"></i></a>
-                            <a class="btn btn-square btn-outline-secondary rounded-circle mx-1" href=""><i class="fab fa-instagram"></i></a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
-                    <div class="team-item rounded p-4">
-                        <img class="img-fluid rounded mb-4" src="img/team-2.jpg" alt="">
-                        <h5>Doris Jordan</h5>
                         <p class="text-primary">Veterinarian</p>
-                        <div class="d-flex justify-content-center">
-                            <a class="btn btn-square btn-outline-secondary rounded-circle mx-1" href=""><i class="fab fa-facebook-f"></i></a>
-                            <a class="btn btn-square btn-outline-secondary rounded-circle mx-1" href=""><i class="fab fa-twitter"></i></a>
-                            <a class="btn btn-square btn-outline-secondary rounded-circle mx-1" href=""><i class="fab fa-instagram"></i></a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
-                    <div class="team-item rounded p-4">
-                        <img class="img-fluid rounded mb-4" src="img/team-3.jpg" alt="">
-                        <h5>Jack D</h5>
-                        <p class="text-primary">Farmer</p>
                         <div class="d-flex justify-content-center">
                             <a class="btn btn-square btn-outline-secondary rounded-circle mx-1" href=""><i class="fab fa-facebook-f"></i></a>
                             <a class="btn btn-square btn-outline-secondary rounded-circle mx-1" href=""><i class="fab fa-twitter"></i></a>
@@ -620,10 +593,10 @@
     <script src="lib/owlcarousel/owl.carousel.min.js"></script>
     <script src="lib/counterup/counterup.min.js"></script>
     <script src="lib/parallax/parallax.min.js"></script>
-    <script src="lib/lightbox/js2/lightbox.min.js"></script>
+    <script src="lib/lightbox/js/lightbox.min.js"></script>
 
     <!-- Template Javascript -->
-    <script src="js2/main.js"></script>
+    <script src="js/main.js"></script>
 </body>
 
 </html>
