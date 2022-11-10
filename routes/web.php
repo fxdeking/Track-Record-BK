@@ -49,4 +49,8 @@ Route::get('/aboutus', 'CampurController@aboutus')->name('aboutus')->middleware(
 
 Route::group(['prefix'=>'profil'], function(){
     Route::get('/', 'ProfilController@profil')->name('profil')->middleware('auth');
+    Route::post('/updatenama/{id}', 'ProfilController@updatenama')->name('profilupdatenama')->middleware('auth');
+    Route::post('/updateemail/{id}', 'ProfilController@updateemail')->name('profilupdateemail')->middleware('auth');
+    Route::post('/updatetelepon/{id}', 'ProfilController@updatetelepon')->name('profilupdatetelepon')->middleware('auth');
+    Route::post('/updatefoto/{id}', 'ProfilController@updatefoto')->name('profilupdatefoto')->middleware('auth');
 });
