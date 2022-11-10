@@ -21,7 +21,7 @@
                         @if(count($catats)>0)
                         @foreach ($catats as $catat)
                                 <div class="d-flex align-items-center" style="padding:0 15px 0 15px;width:250px;">
-                                    <img class="rounded-circle" src="{{ asset('foto') }}/{{ $catat->user->foto }}" alt="" style="width: 40px; height: 40px;">
+                                    
                                     <div class="ms-2">
                                         <h6 class="fw-normal mb-0">{{ $catat->nama }}</h6>
                                         <small>{{ $catat->catatan }}</small>
