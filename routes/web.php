@@ -17,6 +17,10 @@ use App\Http\Controllers\ProfilController;
 */
 
 Route::get('/', function () {
+    return view('index2');
+});
+
+Route::get('/login', function () {
     return view('auth.login');
 });
 
