@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Waktu pembuatan: 08 Nov 2022 pada 12.56
+-- Waktu pembuatan: 10 Nov 2022 pada 07.13
 -- Versi server: 10.4.17-MariaDB
 -- Versi PHP: 7.4.27
 
@@ -40,13 +40,7 @@ CREATE TABLE `catatans` (
 --
 
 INSERT INTO `catatans` (`id`, `nama`, `catatan`, `created_at`, `updated_at`) VALUES
-(6, 'sdfsfs', 'fdsfdsff123', '2022-11-04 23:50:19', '2022-11-05 01:45:44'),
-(8, 'asdfdsaf', 'sdafdsa', '2022-11-04 23:55:16', '2022-11-04 23:55:16'),
-(9, 'sdfsdf', 'asdfdsa', '2022-11-04 23:56:08', '2022-11-04 23:56:08'),
-(10, 'sdfsdf', 'sdfads', '2022-11-04 23:58:39', '2022-11-04 23:58:39'),
-(12, 'sdfdsf', 'sdfsdf', '2022-11-04 23:59:44', '2022-11-04 23:59:44'),
-(13, 'dfgdf', 'gdfgdf', '2022-11-05 00:01:29', '2022-11-05 00:01:29'),
-(15, 'asdsd', 'asdasd', '2022-11-05 00:03:57', '2022-11-05 00:03:57');
+(1, 'Hendy Tandika', 'testestes', '2022-11-09 17:04:57', '2022-11-09 17:04:57');
 
 -- --------------------------------------------------------
 
@@ -84,7 +78,7 @@ INSERT INTO `migrations` (`id`, `migration`, `batch`) VALUES
 (1, '2014_10_12_000000_create_users_table', 1),
 (2, '2014_10_12_100000_create_password_resets_table', 1),
 (3, '2019_08_19_000000_create_failed_jobs_table', 1),
-(4, '2022_10_27_003445_create_catatans_table', 2);
+(4, '2022_10_27_003445_create_catatans_table', 1);
 
 -- --------------------------------------------------------
 
@@ -107,6 +101,8 @@ CREATE TABLE `password_resets` (
 CREATE TABLE `users` (
   `id` bigint(20) UNSIGNED NOT NULL,
   `name` varchar(255) COLLATE utf8mb4_unicode_ci NOT NULL,
+  `foto` varchar(255) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  `telepon` varchar(20) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
   `email` varchar(255) COLLATE utf8mb4_unicode_ci NOT NULL,
   `email_verified_at` timestamp NULL DEFAULT NULL,
   `password` varchar(255) COLLATE utf8mb4_unicode_ci NOT NULL,
@@ -119,8 +115,8 @@ CREATE TABLE `users` (
 -- Dumping data untuk tabel `users`
 --
 
-INSERT INTO `users` (`id`, `name`, `email`, `email_verified_at`, `password`, `remember_token`, `created_at`, `updated_at`) VALUES
-(1, 'Hendy', 'hendytandika25@gmail.com', NULL, '$2y$10$aWTDfV4gv6wNI/pZxL/omeTFC3ik8Y6d6IEuQZanEs3hdh6C0WyT2', NULL, '2022-10-31 23:23:43', '2022-10-31 23:23:43');
+INSERT INTO `users` (`id`, `name`, `foto`, `telepon`, `email`, `email_verified_at`, `password`, `remember_token`, `created_at`, `updated_at`) VALUES
+(1, 'Hendy Tandika', 'default.png', '-', 'hendytandika25@gmail.com', NULL, '$2y$10$yjm.M0X9qLd8cvDbHeR2leozpDR65pmbUzvasrHypZzd9QIMI1Phi', NULL, '2022-11-09 08:13:12', '2022-11-09 08:13:12');
 
 --
 -- Indexes for dumped tables
@@ -166,7 +162,7 @@ ALTER TABLE `users`
 -- AUTO_INCREMENT untuk tabel `catatans`
 --
 ALTER TABLE `catatans`
-  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=17;
+  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
 
 --
 -- AUTO_INCREMENT untuk tabel `failed_jobs`

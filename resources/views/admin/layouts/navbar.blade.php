@@ -21,7 +21,7 @@
                         @if(count($catats)>0)
                         @foreach ($catats as $catat)
                                 <div class="d-flex align-items-center" style="padding:0 15px 0 15px;width:250px;">
-                                    <img class="rounded-circle" src="{{ asset('template/img/user.jpg') }}" alt="" style="width: 40px; height: 40px;">
+                                    <img class="rounded-circle" src="{{ asset('foto') }}/{{ Auth::user()->foto }}" alt="" style="width: 40px; height: 40px;">
                                     <div class="ms-2">
                                         <h6 class="fw-normal mb-0">{{ $catat->nama }}</h6>
                                         <small>{{ $catat->catatan }}</small>
@@ -31,7 +31,7 @@
                             <hr class="dropdown-divider">
                         @endforeach
                         @else
-                        <p>Tidak ada catatan.</p>
+                        <p class="bg-dark" style="text-align:center;">Tidak ada catatan.</p>
                         @endif
                             <a href="{{ route('catinput') }}" class="dropdown-item text-center">Tambah Catatan</a>
                             <a href="{{ route('cat') }}" class="dropdown-item text-center">Lihat Semua Catatan</a>

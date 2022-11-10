@@ -3,6 +3,7 @@
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\CatatanController;
 use App\Http\Controllers\CampurController;
+use App\Http\Controllers\ProfilController;
 
 /*
 |--------------------------------------------------------------------------
@@ -47,5 +48,5 @@ Route::group(['prefix'=>'catatan'], function(){
 Route::get('/aboutus', 'CampurController@aboutus')->name('aboutus')->middleware('auth');
 
 Route::group(['prefix'=>'profil'], function(){
-    Route::get('/', 'CampurController@profil')->name('profil')->middleware('auth');
+    Route::get('/', 'ProfilController@profil')->name('profil')->middleware('auth');
 });
