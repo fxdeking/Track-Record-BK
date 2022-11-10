@@ -17,6 +17,8 @@ class CreateCatatansTable extends Migration
             $table->id();
             $table->string('nama', 35);
             $table->string('catatan', 100);
+            $table->unsignedBigInteger('user_id');
+            $table->foreign('user_id')->references('id')->on('users')->onDelete('cascade');
             $table->timestamps();
         });
     }

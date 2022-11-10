@@ -28,7 +28,8 @@ class CatatanController extends Controller
 
             Catatan::create([
                 'nama'=>$request->get('nama'),
-                'catatan'=>$request->get('catatan')
+                'catatan'=>$request->get('catatan'),
+                'user_id' => $request->get('user_id')
             ]);
     
             return back()->with('message', 'Catatan Berhasil Disimpan');
@@ -52,7 +53,8 @@ class CatatanController extends Controller
 
             Catatan::find($id)->update([
                 'nama'=>$request->get('nama'),
-                'catatan'=>$request->get('catatan')
+                'catatan'=>$request->get('catatan'),
+                'user_id' => $request->get('user_id')
             ]);
     
             return redirect()->route('cat')->with('message', 'Catatan Berhasil Diubah');

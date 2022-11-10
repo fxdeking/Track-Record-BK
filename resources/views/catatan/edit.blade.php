@@ -11,6 +11,7 @@
         @endif
         <form action="{{ route('catupdate', [$catat->id]) }}" method="POST">@csrf
             <div class="form-floating mb-3">
+                <input type="hidden" name="user_id" value="{{ Auth::user()->id }}">
                 <input id="nama" type="text" class="form-control @error('nama') is-invalid @enderror" name="nama"
                     value="{{ $catat->nama }}" id="floatingInput" placeholder="name@example.com"
                     autocomplete="nama" autofocus>

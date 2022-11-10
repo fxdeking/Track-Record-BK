@@ -11,8 +11,9 @@
         @endif
         <form action="{{ route('cattambah') }}" method="POST">@csrf
             <div class="form-floating mb-3">
+                <input type="hidden" name="user_id" value="{{ Auth::user()->id }}">
                 <input id="nama" type="text" class="form-control @error('nama') is-invalid @enderror" name="nama"
-                    value="{{ old('nama') }}" id="floatingInput" placeholder="name@example.com"
+                    value="{{ Auth::user()->name }}" id="floatingInput" placeholder="name@example.com"
                     autocomplete="nama" autofocus>
                 <label for="floatingInput">Nama</label>
                 @error('nama')

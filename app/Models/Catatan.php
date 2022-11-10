@@ -9,5 +9,9 @@ class Catatan extends Model
 {
     use HasFactory;
     protected $table="catatans";
-    protected $fillable=['nama', 'catatan'];
+    protected $fillable=['nama', 'catatan', 'user_id'];
+
+    public function user(){
+        return $this->belongsTo(User::class);
+    }
 }

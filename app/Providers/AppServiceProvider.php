@@ -6,6 +6,7 @@ use Illuminate\Support\Facades\View;
 use Illuminate\Support\ServiceProvider;
 use Illuminate\Support\Facades\Schema;
 use Illuminate\Support\Facades\Auth;
+use App\Models\Catatan;
 use DB;
 
 class AppServiceProvider extends ServiceProvider
@@ -27,7 +28,7 @@ class AppServiceProvider extends ServiceProvider
      */
     public function boot()
     {
-        $catats=DB::table('catatans')->get();
+        $catats = Catatan::with('user')->get();
         View::share('catats',$catats);
     }
 }
