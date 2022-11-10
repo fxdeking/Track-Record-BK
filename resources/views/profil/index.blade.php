@@ -16,9 +16,15 @@
             <table class="table table-borderless">
                 <tr>
                     <td class="align-middle" style="padding-left:20px;">Nama : <b>{{ Auth::user()->name }}</b></td>
+<<<<<<< HEAD
                     <td class="align-middle"><button type="button" class="btn btn-square btn-outline-info m-1" data-toggle="modal" data-target="#exampleModalNama{{Auth::user()->id}}"><i class="fa fa-edit"></i></button></td>
                     <div class="modal fade" id="exampleModalNama{{Auth::user()->id}}" tabindex="-1" role="dialog"
                         aria-labelledby="exampleModalNamaLabel" aria-hidden="true">
+=======
+                    <td class="align-middle"><button type="button" class="btn btn-square btn-outline-info m-1" data-toggle="modal" data-target="#exampleModal{{$catats->id}}"><i class="fa fa-edit"></i></button></td>
+                    <div class="modal fade" id="exampleModal{{$catat->id}}" tabindex="-1" role="dialog"
+                        aria-labelledby="exampleModalLabel" aria-hidden="true">
+>>>>>>> 07f10b44bdf8d53e6857e9d088379d21dc2c0ab2
                         <div class="modal-dialog" role="document">
                             <form action="{{ route('profilupdatenama', [Auth::user()->id]) }}" method="POST">@csrf
                                 <div class="modal-content bg-secondary bg-gradient">

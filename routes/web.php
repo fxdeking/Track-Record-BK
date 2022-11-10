@@ -17,6 +17,10 @@ use App\Http\Controllers\ProfilController;
 */
 
 Route::get('/', function () {
+    return view('index2');
+});
+
+Route::get('/login', function () {
     return view('auth.login');
 });
 
@@ -49,8 +53,12 @@ Route::get('/aboutus', 'CampurController@aboutus')->name('aboutus')->middleware(
 
 Route::group(['prefix'=>'profil'], function(){
     Route::get('/', 'ProfilController@profil')->name('profil')->middleware('auth');
+<<<<<<< HEAD
     Route::post('/updatenama/{id}', 'ProfilController@updatenama')->name('profilupdatenama')->middleware('auth');
     Route::post('/updateemail/{id}', 'ProfilController@updateemail')->name('profilupdateemail')->middleware('auth');
     Route::post('/updatetelepon/{id}', 'ProfilController@updatetelepon')->name('profilupdatetelepon')->middleware('auth');
     Route::post('/updatefoto/{id}', 'ProfilController@updatefoto')->name('profilupdatefoto')->middleware('auth');
 });
+=======
+});
+>>>>>>> 07f10b44bdf8d53e6857e9d088379d21dc2c0ab2
