@@ -12,7 +12,7 @@
             <table class="table table-borderless">
                 <tr>
                     <td class="align-middle" style="padding-left:20px;">Nama : <b>{{ Auth::user()->name }}</b></td>
-                    <td class="align-middle"><button type="button" class="btn btn-square btn-outline-info m-1" data-toggle="modal" data-target="#exampleModal{{$catat->id}}"><i class="fa fa-edit"></i></button></td>
+                    <td class="align-middle"><button type="button" class="btn btn-square btn-outline-info m-1" data-toggle="modal" data-target="#exampleModal{{$catats->id}}"><i class="fa fa-edit"></i></button></td>
                     <div class="modal fade" id="exampleModal{{$catat->id}}" tabindex="-1" role="dialog"
                         aria-labelledby="exampleModalLabel" aria-hidden="true">
                         <div class="modal-dialog" role="document">
