@@ -46,6 +46,7 @@
                         </div>
                     </div>
                 </tr>
+                
                 <tr>
                     <td class="align-middle" style="padding-left:20px;">Email : <b>{{ Auth::user()->email }}</b></td>
                     <td class="align-middle"><button type="button" class="btn btn-square btn-outline-info m-1" data-toggle="modal" data-target="#exampleModalEmail{{Auth::user()->id}}"><i class="fa fa-edit"></i></button></td>
@@ -78,6 +79,7 @@
                         </div>
                     </div>
                 </tr>
+
                 <tr>
                     <td class="align-middle" style="padding-left:20px;">Telepon : <b>{{ Auth::user()->telepon }}</b></td>
                     <td class="align-middle"><button type="button" class="btn btn-square btn-outline-info m-1" data-toggle="modal" data-target="#exampleModalTelepon{{Auth::user()->id}}"><i class="fa fa-edit"></i></button></td>
@@ -110,10 +112,12 @@
                         </div>
                     </div>
                 </tr>
+
                 <tr>
                     <td class="align-middle" style="padding-left:20px;">Ganti Password</td>
                     <td class="align-middle"><button type="button" class="btn btn-square btn-outline-info m-1"><i class="fa fa-edit"></i></button></td>
                 </tr>
+
                 <tr>
                     <td class="align-middle" style="padding-left:20px;">Ubah Foto Profil</td>
                     <td class="align-middle"><button type="button" class="btn btn-square btn-outline-info m-1" data-toggle="modal" data-target="#exampleModalFoto{{Auth::user()->id}}"><i class="fa fa-edit"></i></button></td>
