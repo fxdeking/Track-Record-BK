@@ -76,7 +76,7 @@
                             <a href="#2" class="dropdown-item" style="width:230px;">Form Data Konselor</a>
                             <a href="#3" class="dropdown-item" style="width:240px;">Form Data Laporan Keluhan</a>
                             <a href="#4" class="dropdown-item" style="width:230px;">Form Jam Bertugas</a>
-                            <a href="#5" class="dropdown-item" style="width:230px;">Form Kategori Keluhan</a>
+                            <a href="{{ route('katinput') }}" class="dropdown-item" style="width:230px;">Form Kategori Keluhan</a>
                         </div>
                     </div>
                     <a href="{{ asset('template/form.html') }}" class="nav-item nav-link" style="width:211px;"><i class="fa fa-keyboard me-2"></i>Jadwal Bertugas</a>
