@@ -7,7 +7,7 @@
         <div style="text-align:center;">
             <img class="rounded-circle" src="{{ asset('foto') }}/{{ Auth::user()->foto }}" alt="" style="width: 200px; height: 200px;">
         </div>
-        <br>
+        <br><br>
         @if(Session::has('message'))
         <p class="alert alert-success alert-dismissable">{{ Session::get('message') }} <button type="button"
                 class="close" data-dismiss="alert" aria-hidden="true">&times;</button></p>

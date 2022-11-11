@@ -15,7 +15,7 @@ class CreateCatatansTable extends Migration
     {
         Schema::create('catatans', function (Blueprint $table) {
             $table->id();
-            $table->string('nama', 35);
+            $table->string('nama', 50);
             $table->string('catatan', 100);
             $table->unsignedBigInteger('user_id');
             $table->foreign('user_id')->references('id')->on('users')->onDelete('cascade');

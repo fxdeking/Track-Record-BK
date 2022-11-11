@@ -68,8 +68,8 @@
                         <div class="container">
                             <div class="row justify-content-start">
                                 <div class="col-lg-8 text-start">
-                                    <p class="fs-4 text-white">Selamat datang ke website</p>
-                                    <h1 class="display-1 text-white mb-5 animated slideInRight">Bimbingan Konselimg</h1>
+                                    <p class="fs-4 text-white">Selamat datang di website</p>
+                                    <h1 class="display-1 text-white mb-5 animated slideInRight">Bimbingan Konseling</h1>
                                     <a href="" class="btn btn-secondary rounded-pill py-3 px-5 animated slideInRight">Explore More</a>
                                 </div>
                             </div>
@@ -83,7 +83,7 @@
                             <div class="row justify-content-end">
                                 <div class="col-lg-8 text-end">
                                     <p class="fs-4 text-white">Berfokus pada</p>
-                                    <h1 class="display-1 text-white mb-5 animated slideInRight">pengembangan perilaku baik siswa</h1>
+                                    <h1 class="display-1 text-white mb-5 animated slideInRight">Pengembangan Perilaku Baik Siswa</h1>
                                     <a href="" class="btn btn-secondary rounded-pill py-3 px-5 animated slideInLeft">Explore More</a>
                                 </div>
                             </div>

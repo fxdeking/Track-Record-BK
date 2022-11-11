@@ -39,7 +39,7 @@
                     </div>
                     <div class="nav-item dropdown">
                         <a href="{{ route('aboutus') }}" class="nav-link">
-                            <i class="fa fa-user me-lg-2"></i>
+                            <i class="fa fa-users me-lg-2"></i>
                             <span class="d-none d-lg-inline-flex">Tentang kami</span>
                         </a>
                         <div class="dropdown-menu dropdown-menu-end bg-secondary border-0 rounded-0 rounded-bottom m-0">

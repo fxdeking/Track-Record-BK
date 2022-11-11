@@ -17,6 +17,7 @@
                         <th scope="col" style="text-align:center;width:15%;">No.</th>
                         <th scope="col" style="text-align:center;">Nama Admin</th>
                         <th scope="col" style="text-align:center;">Email Admin</th>
+                        <th scope="col" style="text-align:center;">Nomor Telepon Admin</th>
                         <th scope="col" style="text-align:center;width:15%;">Aksi</th>
                     </tr>
                 </thead>
@@ -27,6 +28,7 @@
                         <td style="text-align:center;">{{ $loop->iteration }}</td>
                         <td style="text-align:center;">{{ $admin->name }}</td>
                         <td style="text-align:center;">{{ $admin->email }}</td>
+                        <td style="text-align:center;">{{ $admin->telepon }}</td>
                         <td style="text-align:center;"><button type="button" class="btn btn-sm btn-primary" data-toggle="modal" data-target="#exampleModal{{$admin->id}}">Hapus</button></td>
                     </tr>
 

@@ -74,7 +74,6 @@
                         <div class="dropdown-menu bg-transparent border-0">
                             <a href="#1" class="dropdown-item" style="width:230px;">Form Data Pengunjung</a>
                             <a href="#2" class="dropdown-item" style="width:230px;">Form Data Konselor</a>
-                            <a href="#3" class="dropdown-item" style="width:240px;">Form Data Laporan Keluhan</a>
                             <a href="#4" class="dropdown-item" style="width:230px;">Form Jam Bertugas</a>
                             <a href="{{ route('katinput') }}" class="dropdown-item" style="width:230px;">Form Kategori Keluhan</a>
                         </div>
