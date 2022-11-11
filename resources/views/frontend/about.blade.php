@@ -74,9 +74,7 @@
                         <h5>Hendy Tandika</h5>
                         <p class="text-primary">Ketua kelompok</p>
                         <div class="d-flex justify-content-center">
-                            <a class="btn btn-square btn-outline-secondary rounded-circle mx-1" href=""><i class="fab fa-facebook-f"></i></a>
-                            <a class="btn btn-square btn-outline-secondary rounded-circle mx-1" href=""><i class="fab fa-twitter"></i></a>
-                            <a class="btn btn-square btn-outline-secondary rounded-circle mx-1" href=""><i class="fab fa-instagram"></i></a>
+                            <a class="btn btn-square btn-outline-secondary rounded-circle mx-1" href="https://www.instagram.com/fxdeking/"><i class="fab fa-instagram"></i></a>
                         </div>
                     </div>
                 </div>
@@ -85,9 +83,7 @@
                         <img class="img-fluid rounded mb-4" src="img/wd.jpg" alt="">
                         <h5>William</h5>
                         <div class="d-flex justify-content-center">
-                            <a class="btn btn-square btn-outline-secondary rounded-circle mx-1" href=""><i class="fab fa-facebook-f"></i></a>
-                            <a class="btn btn-square btn-outline-secondary rounded-circle mx-1" href=""><i class="fab fa-twitter"></i></a>
-                            <a class="btn btn-square btn-outline-secondary rounded-circle mx-1" href=""><i class="fab fa-instagram"></i></a>
+                            <a class="btn btn-square btn-outline-secondary rounded-circle mx-1" href="https://www.instagram.com/williamtann19/"><i class="fab fa-instagram"></i></a>
                         </div>
                     </div>
                 </div>
@@ -96,9 +92,7 @@
                         <img class="img-fluid rounded mb-4" src="img/leo.jpg" alt="">
                         <h5>Leonardo Setiawan</h5>
                         <div class="d-flex justify-content-center">
-                            <a class="btn btn-square btn-outline-secondary rounded-circle mx-1" href=""><i class="fab fa-facebook-f"></i></a>
-                            <a class="btn btn-square btn-outline-secondary rounded-circle mx-1" href=""><i class="fab fa-twitter"></i></a>
-                            <a class="btn btn-square btn-outline-secondary rounded-circle mx-1" href=""><i class="fab fa-instagram"></i></a>
+                            <a class="btn btn-square btn-outline-secondary rounded-circle mx-1" href="https://www.instagram.com/setiawan.mem/"><i class="fab fa-instagram"></i></a>
                         </div>
                     </div>
                 </div>
@@ -107,9 +101,7 @@
                         <img class="img-fluid rounded mb-4" src="img/cecil.jpeg" alt="">
                         <h5>Cecilya</h5>
                         <div class="d-flex justify-content-center">
-                            <a class="btn btn-square btn-outline-secondary rounded-circle mx-1" href=""><i class="fab fa-facebook-f"></i></a>
-                            <a class="btn btn-square btn-outline-secondary rounded-circle mx-1" href=""><i class="fab fa-twitter"></i></a>
-                            <a class="btn btn-square btn-outline-secondary rounded-circle mx-1" href=""><i class="fab fa-instagram"></i></a>
+                            <a class="btn btn-square btn-outline-secondary rounded-circle mx-1" href="https://www.instagram.com/celixdhithera_/"><i class="fab fa-instagram"></i></a>
                         </div>
                     </div>
                 </div>
@@ -118,9 +110,7 @@
                         <img class="img-fluid rounded mb-4" src="img/keila.jpg" alt="">
                         <h5>Keila Marie</h5>
                         <div class="d-flex justify-content-center">
-                            <a class="btn btn-square btn-outline-secondary rounded-circle mx-1" href=""><i class="fab fa-facebook-f"></i></a>
-                            <a class="btn btn-square btn-outline-secondary rounded-circle mx-1" href=""><i class="fab fa-twitter"></i></a>
-                            <a class="btn btn-square btn-outline-secondary rounded-circle mx-1" href=""><i class="fab fa-instagram"></i></a>
+                            <a class="btn btn-square btn-outline-secondary rounded-circle mx-1" href="https://www.instagram.com/keilamaries_/"><i class="fab fa-instagram"></i></a>
                         </div>
                     </div>
                 </div>
@@ -128,10 +118,7 @@
                     <div class="team-item rounded p-4">
                         <img class="img-fluid rounded mb-4" src="img/steaven.jpg" alt="">
                         <h5>Steaven</h5>
-                        <p class="text-primary">Farmer</p>
                         <div class="d-flex justify-content-center">
-                            <a class="btn btn-square btn-outline-secondary rounded-circle mx-1" href=""><i class="fab fa-facebook-f"></i></a>
-                            <a class="btn btn-square btn-outline-secondary rounded-circle mx-1" href=""><i class="fab fa-twitter"></i></a>
                             <a class="btn btn-square btn-outline-secondary rounded-circle mx-1" href=""><i class="fab fa-instagram"></i></a>
                         </div>
                     </div>
