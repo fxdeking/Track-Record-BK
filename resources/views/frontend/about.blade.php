@@ -119,7 +119,7 @@
                         <img class="img-fluid rounded mb-4" src="img/steaven.jpg" alt="">
                         <h5>Steaven</h5>
                         <div class="d-flex justify-content-center">
-                            <a class="btn btn-square btn-outline-secondary rounded-circle mx-1" href=""><i class="fab fa-instagram"></i></a>
+                            <a class="btn btn-square btn-outline-secondary rounded-circle mx-1" href="https://www.instagram.com/kucing_nyangkut/"><i class="fab fa-instagram"></i></a>
                         </div>
                     </div>
                 </div>
