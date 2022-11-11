@@ -15,8 +15,8 @@ class CreatePengunjungsTable extends Migration
     {
         Schema::create('pengunjungs', function (Blueprint $table) {
             $table->id();
-            $table->string('nama', 50);
-            $table->string('kelas', 35);
+            $table->string('nama', 100);
+            $table->string('kelas', 50);
             $table->integer('usia');
             $table->enum('jk', ['Laki-Laki', 'Perempuan']);
             $table->text('alamat');

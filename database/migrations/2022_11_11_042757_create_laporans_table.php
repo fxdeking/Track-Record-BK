@@ -19,7 +19,7 @@ class CreateLaporansTable extends Migration
             $table->foreign('pengunjung_id')->references('id')->on('pengunjungs')->onDelete('cascade');
             $table->text('keluhan');
             $table->time('kunjungan');
-            $table->time('keluar');
+            $table->time('keluar')->nullable();
             $table->timestamps();
         });
     }

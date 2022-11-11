@@ -49,7 +49,7 @@
         </button>
         <div class="collapse navbar-collapse" id="navbarCollapse">
             <div class="navbar-nav ms-auto p-4 p-lg-0">
-                <a href="index.html" class="nav-item nav-link active">Home</a>
+                <a href="{{ url('/') }}" class="nav-item nav-link active">Home</a>
                 <a href="{{ route('tentang') }}" class="nav-item nav-link">Tentang Kami</a>
                 <a href="{{ route('dashboard') }}" class="nav-item nav-link">Login</a>
             </div>
@@ -376,7 +376,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
-                    &copy; <a class="fw-semi-bold" href="#">Cinta Kasih Tzu Chi</a>, All Right Reserved.
+                    &copy; <a class="fw-semi-bold" href="{{ route('tentang') }}">Cinta Kasih Tzu Chi</a>, All Right Reserved.
                 </div>
             </div>
         </div>
