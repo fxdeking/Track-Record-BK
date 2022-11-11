@@ -17,8 +17,12 @@ use App\Http\Controllers\ProfilController;
 */
 
 Route::get('/', function () {
-    return view('index2');
+    return view('frontend.index');
 });
+
+Route::get('/tentang', function () {
+    return view('frontend.about');
+})->name('tentang');
 
 Route::get('/login', function () {
     return view('auth.login');
