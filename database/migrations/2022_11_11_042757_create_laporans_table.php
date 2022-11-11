@@ -15,6 +15,11 @@ class CreateLaporansTable extends Migration
     {
         Schema::create('laporans', function (Blueprint $table) {
             $table->id();
+            $table->unsignedBigInteger('pengunjung_id');
+            $table->foreign('pengunjung_id')->references('id')->on('pengunjungs')->onDelete('cascade');
+            $table->text('keluhan');
+            $table->time('kunjungan');
+            $table->time('keluar');
             $table->timestamps();
         });
     }
