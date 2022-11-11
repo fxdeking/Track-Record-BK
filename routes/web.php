@@ -63,3 +63,8 @@ Route::group(['prefix'=>'profil'], function(){
     Route::post('/updatefoto/{id}', 'ProfilController@updatefoto')->name('profilupdatefoto')->middleware('auth');
     Route::post('/updatepassword', 'ProfilController@updatepassword')->name('profilupdatepassword')->middleware('auth');
 });
+
+Route::group(['prefix'=>'admins'], function(){
+    Route::get('/', 'AdminController@index')->name('adm')->middleware('auth');
+    Route::delete('/delete/{id}', 'AdminController@delete')->name('admdelete')->middleware('auth');
+});
