@@ -298,11 +298,11 @@
                 <div class="col-lg-6 wow fadeIn" data-wow-delay="0.5s">
                     <div class="row g-4 align-items-center">
                         <div class="col-sm-4">
-                            <img class="img-fluid rounded" src="img/pakagus.jpg" alt="">
+                            <img class="img-fluid rounded" src="img/bunesta.jpg" alt="">
                         </div>
                         <div class="col-sm-8">
-                            <h2 class="text-white mb-3">Agus Salim, M.Pd.</h2>
-                            <p class="text-white mb-4">Kesiswaan</p>
+                            <h2 class="text-white mb-3">Ernesta Panjaitan, S.TH</h2>
+                            <p class="text-white mb-4">Guru BP</p>
                             <a class="btn btn-secondary rounded-pill py-2 px-4" href="">Read More</a>
                         </div>
                     </div>
