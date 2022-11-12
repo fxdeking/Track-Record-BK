@@ -88,6 +88,7 @@
 
             <!-- Recent Sales Start -->
             <div class="container-fluid pt-4 px-4">
+                <a href="{{ route('kat') }}" class="text-reset text-decoration-none">
                 <div class="bg-secondary text-center rounded p-4 h">
                     <div class="d-flex align-items-center justify-content-between mb-4">
                         <p class="mb-0" style="font-size:20px;"><b>Kategori Keluhan</b></p>
@@ -103,11 +104,22 @@
                                 </tr>
                             </thead>
                             <tbody>
-                                
+                                @if(count($kategoris)>0)
+                                @foreach ($kategoris as $kategori)
+                                    <tr>
+                                        <td style="text-align:center;">{{ $loop->iteration }}</td>
+                                        <td style="text-align:center;">{{ $kategori->nama }}</td>
+                                        <td style="text-align:center;">{{ $kategori->deskripsi }}</td>
+                                    </tr>
+                                @endforeach
+                                @else
+                                <td style="text-align:center;" colspan="3">Tidak ada kategori yang bisa ditampilkan.</td>
+                                @endif
                             </tbody>
                         </table>
                     </div>
                 </div>
+                </a>
             </div>
             <!-- Recent Sales End -->
 
@@ -159,6 +171,22 @@
                             </div>
                         </div>
                         </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="container-fluid pt-4 px-4">
+                <div class="row g-4">
+                    <div class="col-sm-12 col-xl-6">
+                        <div class="bg-secondary rounded p-4 h" style="height:600px;width:1221px;">
+                            <div class="d-flex align-items-center justify-content-between mb-4">
+                                <p class="mb-0" style="font-size:20px;"><b>Alamat Konseling</b></p>
+                            </div>
+                            <iframe class="position-relative rounded" style="height:500px;width:1171px;"
+                            src="https://maps.google.com/maps?q=Sekolah%20Cinta%20Kasih%20Tzu%20Chi&t=&z=15&ie=UTF8&iwloc=&output=embed"
+                            frameborder="0" allowfullscreen="" aria-hidden="false"
+                            tabindex="0" style="filter: grayscale(0%) invert(0%) contrast(100%); border: 0;"></iframe>
+                        </div>
                     </div>
                 </div>
             </div>

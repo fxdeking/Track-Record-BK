@@ -14,7 +14,7 @@
                 <div class="navbar-nav align-items-center ms-auto">
                     <div class="nav-item dropdown">
                         <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">
-                            <i class="fa fa-envelope me-lg-2"></i>
+                            <i class="fa fa-sticky-note me-lg-2"></i>
                             <span class="d-none d-lg-inline-flex">Catatan</span>
                         </a>
                         <div class="dropdown-menu dropdown-menu-end bg-secondary border-0 rounded-0 rounded-bottom m-0" style="max-height:165px;overflow-y: scroll;">
