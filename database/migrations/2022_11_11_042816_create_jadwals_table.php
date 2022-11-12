@@ -17,8 +17,8 @@ class CreateJadwalsTable extends Migration
             $table->id();
             $table->string('nama', 100);
             $table->string('hari');
-            $table->time('jammulai');
-            $table->time('jamselesai');
+            $table->string('jammulai');
+            $table->string('jamselesai');
             $table->timestamps();
         });
     }

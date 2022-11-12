@@ -32,7 +32,7 @@ class KategoriController extends Controller
                 'deskripsi'=>$request->get('deskripsi')
             ]);
     
-            return back()->with('message', 'Kategori Berhasil Disimpan');
+            return redirect()->route('kat')->with('message', 'Kategori Berhasil Disimpan');
     }
 
     public function edit(Request $request, $id) {

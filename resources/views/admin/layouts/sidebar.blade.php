@@ -74,11 +74,11 @@
                         <div class="dropdown-menu bg-transparent border-0">
                             <a href="#1" class="dropdown-item" style="width:230px;">Form Data Pengunjung</a>
                             <a href="#2" class="dropdown-item" style="width:230px;">Form Data Konselor</a>
-                            <a href="#4" class="dropdown-item" style="width:230px;">Form Jam Bertugas</a>
+                            <a href="{{ route('jadinput') }}" class="dropdown-item" style="width:230px;">Form Jam Bertugas</a>
                             <a href="{{ route('katinput') }}" class="dropdown-item" style="width:230px;">Form Kategori Keluhan</a>
                         </div>
                     </div>
-                    <a href="{{ asset('template/form.html') }}" class="nav-item nav-link" style="width:211px;"><i class="fa fa-keyboard me-2"></i>Jadwal Bertugas</a>
+                    <a href="{{ route('jad') }}" class="nav-item nav-link" style="width:211px;"><i class="fa fa-keyboard me-2"></i>Jadwal Bertugas</a>
                     <a href="{{ route('cat') }}" class="nav-item nav-link"><i class="fa fa-th me-2"></i>Catatan</a>
                     <a href="{{ route('adm') }}" class="nav-item nav-link"><i class="fa fa-laptop me-2"></i>Admin</a>
                     <!-- <a href="chart.html" class="nav-item nav-link"><i class="fa fa-chart-bar me-2"></i>Charts</a> -->
