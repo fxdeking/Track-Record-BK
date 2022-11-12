@@ -16,7 +16,7 @@
                             <i class="fa fa-chart-line fa-3x text-primary"></i>
                             <div class="ms-3">
                                 <p class="mb-2">Data Pengunjung</p>
-                                <h6 class="mb-0">5</h6>
+                                <h6 class="mb-0">{{ $pengunjungs->count() }}</h6>
                             </div>
                         </div>
                         </a>

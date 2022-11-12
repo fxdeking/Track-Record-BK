@@ -8,6 +8,7 @@ use Illuminate\Support\Facades\Schema;
 use Illuminate\Support\Facades\Auth;
 use App\Models\Catatan;
 use App\Models\Kategori;
+use App\Models\Pengunjung;
 use DB;
 
 class AppServiceProvider extends ServiceProvider
@@ -34,5 +35,8 @@ class AppServiceProvider extends ServiceProvider
 
         $kategoris = Kategori::get();
         View::share('kategoris',$kategoris);
+
+        $pengunjungs = Pengunjung::get();
+        View::share('pengunjungs',$pengunjungs);
     }
 }

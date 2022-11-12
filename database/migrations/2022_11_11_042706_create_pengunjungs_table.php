@@ -15,13 +15,14 @@ class CreatePengunjungsTable extends Migration
     {
         Schema::create('pengunjungs', function (Blueprint $table) {
             $table->id();
+            $table->unsignedBigInteger('kategori_id');
+            $table->foreign('kategori_id')->references('id')->on('kategoris')->onDelete('cascade');
             $table->string('nama', 100);
             $table->string('kelas', 50);
             $table->integer('usia');
-            $table->enum('jk', ['Laki-Laki', 'Perempuan']);
+            $table->enum('jk', ['Laki-laki', 'Perempuan']);
             $table->text('alamat');
             $table->integer('notelp');
-            $table->string('kategori', 50);
             $table->timestamps();
         });
     }
