@@ -9,6 +9,7 @@ use Illuminate\Support\Facades\Auth;
 use App\Models\Catatan;
 use App\Models\Kategori;
 use App\Models\Pengunjung;
+use App\Models\Laporan;
 use DB;
 
 class AppServiceProvider extends ServiceProvider
@@ -38,5 +39,8 @@ class AppServiceProvider extends ServiceProvider
 
         $pengunjungs = Pengunjung::get();
         View::share('pengunjungs',$pengunjungs);
+
+        $laporans = Laporan::get();
+        View::share('laporans',$laporans);
     }
 }

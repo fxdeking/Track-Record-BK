@@ -15,8 +15,7 @@ class CreateKonselorsTable extends Migration
     {
         Schema::create('konselors', function (Blueprint $table) {
             $table->id();
-            $table->string('nama', 100);
-            $table->enum('jk', ['Laki-Laki', 'Perempuan']);
+            $table->enum('jk', ['Laki-laki', 'Perempuan']);
             $table->integer('notelp');
             $table->unsignedBigInteger('jadwal_id');
             $table->foreign('jadwal_id')->references('id')->on('jadwals')->onDelete('cascade');

@@ -14,4 +14,8 @@ class Kategori extends Model
     public function pengunjung(){
         return $this->hasMany(Pengunjung::class);
     }
+
+    public function laporan(){
+        return $this->hasMany(Laporan::class);
+    }
 }

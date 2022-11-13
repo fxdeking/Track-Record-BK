@@ -8,8 +8,8 @@ use App\Models\Konselor;
 class KonselorController extends Controller
 {
     public function index() {
-        $kategoris = Kategori::all();
-        return view ('kategori.index', compact('kategoris'));
+        $konselors = Konselor::all();
+        return view ('konselor.index', compact('konselors'));
     }
 
     public function input() {
@@ -18,50 +18,50 @@ class KonselorController extends Controller
 
     public function tambah(Request $request) {
         $this->validate($request,[
-            'nama'=>'required|min:3|max:50',
-            'deskripsi'=>'required|min:3|max:150'
-        ], ['nama.required'=>'Isi kategori terlebih dahulu',
-            'deskripsi.required'=>'Isi deskripsi terlebih dahulu',
-            'nama.min'=>'Minimal 3 karakter',
-            'deskripsi.min'=>'Minimal 3 karakter',
-            'nama.max'=>'Maksimal 50 karakter',
-            'deskripsi.max'=>'Maksimal 150 karakter']);
+            'jk'=>'required',
+            'notelp'=>'required|min:3|max:20',
+            'jadwal_id'=>'required'
+        ], ['jk.required'=>'Isi jenis kelamin konselor terlebih dahulu',
+            'notelp.required'=>'Isi nomor telepon konselor terlebih dahulu',
+            'notelp.min'=>'Minimal 3 karakter',
+            'notelp.max'=>'Maksimal 20 karakter']);
 
-            Kategori::create([
-                'nama'=>$request->get('nama'),
-                'deskripsi'=>$request->get('deskripsi')
+            Konselor::create([
+                'jk'=>$request->get('jk'),
+                'notelp'=>$request->get('notelp'),
+                'jadwal_id'=>$request->get('jadwal_id')
             ]);
     
-            return redirect()->route('kat')->with('message', 'Kategori Berhasil Disimpan');
+            return redirect()->route('kon')->with('message', 'Data Konselor Berhasil Disimpan');
     }
 
     public function edit(Request $request, $id) {
-        $kategori = Kategori::find($id);
-        return view ('kategori.edit', compact('kategori'));
+        $konselor = Konselor::find($id);
+        return view ('konselor.edit', compact('konselor'));
     }
 
     public function update(Request $request, $id) {
         $this->validate($request,[
-            'nama'=>'required|min:3|max:50',
-            'deskripsi'=>'required|min:3|max:150'
-        ], ['nama.required'=>'Isi kategori terlebih dahulu',
-            'deskripsi.required'=>'Isi deskripsi terlebih dahulu',
-            'nama.min'=>'Minimal 3 karakter',
-            'deskripsi.min'=>'Minimal 3 karakter',
-            'nama.max'=>'Maksimal 50 karakter',
-            'deskripsi.max'=>'Maksimal 150 karakter']);
+            'jk'=>'required',
+            'notelp'=>'required|min:3|max:20',
+            'jadwal_id'=>'required'
+        ], ['jk.required'=>'Isi jenis kelamin konselor terlebih dahulu',
+            'notelp.required'=>'Isi nomor telepon konselor terlebih dahulu',
+            'notelp.min'=>'Minimal 3 karakter',
+            'notelp.max'=>'Maksimal 20 karakter']);
 
-            Kategori::find($id)->update([
-                'nama'=>$request->get('nama'),
-                'deskripsi'=>$request->get('deskripsi')
+            Konselor::find($id)->update([
+                'jk'=>$request->get('jk'),
+                'notelp'=>$request->get('notelp'),
+                'jadwal_id'=>$request->get('jadwal_id')
             ]);
     
-            return redirect()->route('kat')->with('message', 'Kategori Berhasil Diubah');
+            return redirect()->route('kon')->with('message', 'Data Konselor Berhasil Diubah');
     }
 
     public function delete($id) {
-        $kategori = Kategori::find($id);
-        $kategori->delete();
-        return redirect()->route('kat')->with('message', 'Kategori Berhasil Dihapus');
+        $konselor = Konselor::find($id);
+        $konselor->delete();
+        return redirect()->route('kon')->with('message', 'Data Konselor Berhasil Dihapus');
     }
 }

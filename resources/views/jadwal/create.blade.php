@@ -58,7 +58,7 @@
             </div>
             
             <div class="form-floating mb-3">
-                <p class="bg-primary rounded p-3">Jam Bertugas</p>
+                <p class="bg-primary rounded p-3">Jam Bertugas (Mulai - Selesai)</p>
                 <input type="time" class="@error('jammulai') is-invalid @enderror" name="jammulai" value="{{ old('jammulai') }}" autofocus>
                 @error('jammulai')
                 <span class="invalid-feedback" role="alert">

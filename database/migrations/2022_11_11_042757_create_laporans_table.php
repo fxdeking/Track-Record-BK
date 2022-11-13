@@ -17,9 +17,11 @@ class CreateLaporansTable extends Migration
             $table->id();
             $table->unsignedBigInteger('pengunjung_id');
             $table->foreign('pengunjung_id')->references('id')->on('pengunjungs')->onDelete('cascade');
+            $table->unsignedBigInteger('kategori_id');
+            $table->foreign('kategori_id')->references('id')->on('kategoris')->onDelete('cascade');
             $table->text('keluhan');
-            $table->time('kunjungan');
-            $table->time('keluar')->nullable();
+            $table->string('kunjungan');
+            $table->string('keluar')->nullable();
             $table->timestamps();
         });
     }

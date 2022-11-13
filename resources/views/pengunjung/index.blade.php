@@ -38,7 +38,7 @@
                         <td style="text-align:center;">{{ $pengunjung->alamat }}</td>
                         <td style="text-align:center;">{{ $pengunjung->notelp }}</td>
                         <td style="text-align:center;">{{ $pengunjung->kategori->nama }}</td>
-                        <td style="text-align:center;"><a class="btn btn-sm btn-info" href="{{ route('pengedit', [$pengunjung->id]) }}">Buat Laporan</a></td>
+                        <td style="text-align:center;"><a class="btn btn-sm btn-info" href="{{ route('lapinput', [$pengunjung->id]) }}">Buat Laporan</a></td>
                         <td style="text-align:center;"><a class="btn btn-sm btn-primary" href="{{ route('pengedit', [$pengunjung->id]) }}">Ubah</a></td>
                         <td style="text-align:center;"><button type="button" class="btn btn-sm btn-primary" data-toggle="modal" data-target="#exampleModal{{$pengunjung->id}}">Hapus</button></td>
                     </tr>

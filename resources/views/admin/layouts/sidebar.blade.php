@@ -77,8 +77,8 @@
                         <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown"><i class="fa fa-table me-2"></i> Data </a>
                         <div class="dropdown-menu bg-transparent border-0">
                             <a href="{{ route('peng') }}" class="dropdown-item">Data Pengunjung</a>
-                            <a href="#2" class="dropdown-item">Data Konselor</a>
-                            <a href="#3" class="dropdown-item" style="width:220px;">Data Laporan Keluhan</a>
+                            <a href="{{ route('kon') }}" class="dropdown-item">Data Konselor</a>
+                            <a href="{{ route('lap') }}" class="dropdown-item" style="width:220px;">Data Laporan Keluhan</a>
                         </div>
                     </div>
                     <div class="nav-item dropdown">

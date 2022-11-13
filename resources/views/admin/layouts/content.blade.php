@@ -11,7 +11,7 @@
 <div class="container-fluid pt-4 px-4">
                 <div class="row g-4">
                     <div class="col-sm-6 col-xl-3">
-                        <a href="{{ route('cat') }}" class="text-reset text-decoration-none">
+                        <a href="{{ route('peng') }}" class="text-reset text-decoration-none">
                         <div class="bg-secondary rounded d-flex align-items-center justify-content-between p-4 h">
                             <i class="fa fa-chart-line fa-3x text-primary"></i>
                             <div class="ms-3">
@@ -22,7 +22,7 @@
                         </a>
                     </div>
                     <div class="col-sm-6 col-xl-3">
-                        <a href="{{ route('cat') }}" class="text-reset text-decoration-none">
+                        <a href="{{ route('kon') }}" class="text-reset text-decoration-none">
                         <div class="bg-secondary rounded d-flex align-items-center justify-content-between p-4 h">
                             <i class="fa fa-chart-bar fa-3x text-primary"></i>
                             <div class="ms-3">
@@ -33,12 +33,12 @@
                         </a>
                     </div>
                     <div class="col-sm-6 col-xl-3">
-                        <a href="{{ route('cat') }}" class="text-reset text-decoration-none">
+                        <a href="{{ route('lap') }}" class="text-reset text-decoration-none">
                         <div class="bg-secondary rounded d-flex align-items-center justify-content-between p-4 h">
                             <i class="fa fa-chart-area fa-3x text-primary"></i>
                             <div class="ms-3">
                                 <p class="mb-2">Data Laporan</p>
-                                <h6 class="mb-0">30</h6>
+                                <h6 class="mb-0">{{ $laporans->count() }}</h6>
                             </div>
                         </div>
                         </a>

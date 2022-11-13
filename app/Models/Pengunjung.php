@@ -14,4 +14,8 @@ class Pengunjung extends Model
     public function kategori(){
         return $this->belongsTo(Kategori::class);
     }
+
+    public function laporan(){
+        return $this->hasMany(Laporan::class);
+    }
 }

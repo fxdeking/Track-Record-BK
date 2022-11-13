@@ -98,7 +98,7 @@ Route::group(['prefix'=>'konselor'], function(){
 
 Route::group(['prefix'=>'laporan'], function(){
     Route::get('/', 'LaporanController@index')->name('lap')->middleware('auth');
-    Route::get('/input', 'LaporanController@input')->name('lapinput')->middleware('auth');
+    Route::get('/input/{id}', 'LaporanController@input')->name('lapinput')->middleware('auth');
     Route::post('/tambah', 'LaporanController@tambah')->name('laptambah')->middleware('auth');
     Route::get('/edit/{id}', 'LaporanController@edit')->name('lapedit')->middleware('auth');
     Route::post('/update/{id}', 'LaporanController@update')->name('lapupdate')->middleware('auth');
