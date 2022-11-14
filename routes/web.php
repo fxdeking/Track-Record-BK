@@ -24,21 +24,13 @@ Route::get('/tentang', function () {
     return view('frontend.about');
 })->name('tentang');
 
-Route::get('/login', function () {
+Route::get('/admin/login', function () {
     return view('auth.login');
 });
 
 Route::get('/dashboard', function () {
     return view('index');
 })->name('dashboard')->middleware('auth');
-
-Auth::routes();
-
-Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home')->middleware('auth');
-
-Auth::routes();
-
-Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home')->middleware('auth');
 
 Auth::routes();
 
