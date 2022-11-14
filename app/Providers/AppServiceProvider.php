@@ -10,6 +10,7 @@ use App\Models\Catatan;
 use App\Models\Kategori;
 use App\Models\Pengunjung;
 use App\Models\Laporan;
+use App\Models\Konselor;
 use DB;
 
 class AppServiceProvider extends ServiceProvider
@@ -42,5 +43,8 @@ class AppServiceProvider extends ServiceProvider
 
         $laporans = Laporan::get();
         View::share('laporans',$laporans);
+
+        $konselors = Konselor::get();
+        View::share('konselors',$konselors);
     }
 }
