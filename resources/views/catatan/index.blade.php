@@ -55,7 +55,7 @@
                     </div>
                 @endforeach
                 @else
-                <td style="text-align:center;" colspan="3">Tidak ada catatan.</td>
+                <td style="text-align:center;" colspan="3">Tidak ada catatan yang bisa ditampilkan.</td>
                 @endif
                 </tbody>
             </table>

@@ -9,7 +9,7 @@
     <meta content="" name="description">
 
     <!-- Favicon -->
-    <link href="{{ asset('img/favicon.ico') }}" rel="icon">
+    <link href="img/logo-light.png" rel="icon">
 
     <!-- Google Web Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -41,6 +41,7 @@
 
     <!-- Navbar Start -->
     <nav class="navbar navbar-expand-lg bg-white navbar-light sticky-top px-4 px-lg-5">
+        <img src="img/logo-light.png" style="width: 100px;">
         <a href="index.html" class="navbar-brand d-flex align-items-center">
             <h1 class="m-0">Track Record BK</h1>
         </a>
@@ -70,7 +71,7 @@
                                 <div class="col-lg-8 text-start">
                                     <p class="fs-4 text-white">Selamat datang ke website</p>
                                     <h1 class="display-1 text-white mb-5 animated slideInRight">Bimbingan Konselimg</h1>
-                                    <a href="" class="btn btn-secondary rounded-pill py-3 px-5 animated slideInRight">Explore More</a>
+                                    <a href="" class="btn btn-secondary rounded-pill py-3 px-5 animated slideInRight"></a>
                                 </div>
                             </div>
                         </div>
@@ -84,7 +85,7 @@
                                 <div class="col-lg-8 text-end">
                                     <p class="fs-4 text-white">Berfokus pada</p>
                                     <h1 class="display-1 text-white mb-5 animated slideInRight">pengembangan perilaku baik siswa</h1>
-                                    <a href="" class="btn btn-secondary rounded-pill py-3 px-5 animated slideInLeft">Explore More</a>
+                                    <a href="" class="btn btn-secondary rounded-pill py-3 px-5 animated slideInLeft"></a>
                                 </div>
                             </div>
                         </div>
@@ -162,7 +163,7 @@
                     <p><i class="fa fa-check text-primary me-3"></i>Merencanakan kegiatan penyelesaian studi, perkembangan karir, dan juga kehidupan peserta didik di masa depan.</p>
                     <p><i class="fa fa-check text-primary me-3"></i>Menyesuaikan diri dengan lingkungan pendidikan dan juga lingkungan masyarakat</p>
                     <p><i class="fa fa-check text-primary me-3"></i>Mengetahui kesulitan dan juga hambatan yang dihadapi oleh siswa dalam studi, penyesuaian diri dengan lingkungan pendidikan yang ada di masyarakat</p>
-                    <a class="btn btn-secondary rounded-pill py-3 px-5 mt-3" href="">Explore More</a>
+                    <a class="btn btn-secondary rounded-pill py-3 px-5 mt-3" href=""></a>
                 </div>
                 <div class="col-lg-6">
                     <div class="rounded overflow-hidden">
@@ -215,10 +216,7 @@
                         <div class="product-item">
                             <div class="position-relative">
                                 <img class="img-fluid" src="img/fungsi1.jpeg" alt="">
-                                <div class="product-overlay">
-                                    <a class="btn btn-square btn-secondary rounded-circle m-1" href=""><i class="bi bi-link"></i></a>
-                                    <a class="btn btn-square btn-secondary rounded-circle m-1" href=""><i class="bi bi-cart"></i></a>
-                                </div>
+                                
                             </div>
                             <div class="text-center p-4">
                                 <a class="d-block h5" href=""></a>
@@ -230,10 +228,7 @@
                         <div class="product-item">
                             <div class="position-relative">
                                 <img class="img-fluid" src="img/fungsi2.jpeg" alt="">
-                                <div class="product-overlay">
-                                    <a class="btn btn-square btn-secondary rounded-circle m-1" href=""><i class="bi bi-link"></i></a>
-                                    <a class="btn btn-square btn-secondary rounded-circle m-1" href=""><i class="bi bi-cart"></i></a>
-                                </div>
+                                
                             </div>
                             <div class="text-center p-4">
                                 <a class="d-block h5" href=""></a>
@@ -245,10 +240,7 @@
                         <div class="product-item">
                             <div class="position-relative">
                                 <img class="img-fluid" src="img/fungsi3.jpeg" alt="">
-                                <div class="product-overlay">
-                                    <a class="btn btn-square btn-secondary rounded-circle m-1" href=""><i class="bi bi-link"></i></a>
-                                    <a class="btn btn-square btn-secondary rounded-circle m-1" href=""><i class="bi bi-cart"></i></a>
-                                </div>
+                                
                             </div>
                             <div class="text-center p-4">
                                 <span class="text-primary me-1">Membantu dalam mengantisipasi atau pencegahan masalah yang dapat terjadi pada peserta didik dan membantu mereka dalam mengatasinya</span>
@@ -259,10 +251,7 @@
                         <div class="product-item">
                             <div class="position-relative">
                                 <img class="img-fluid" src="img/fungsi4.jpeg" alt="">
-                                <div class="product-overlay">
-                                    <a class="btn btn-square btn-secondary rounded-circle m-1" href=""><i class="bi bi-link"></i></a>
-                                    <a class="btn btn-square btn-secondary rounded-circle m-1" href=""><i class="bi bi-cart"></i></a>
-                                </div>
+                                
                             </div>
                             <div class="text-center p-4">
                                 <a class="d-block h5" href=""></a>
@@ -291,7 +280,7 @@
                         <div class="col-sm-8">
                             <h2 class="text-white mb-3">Rizky Mulyadi, S.PD.</h2>
                             <p class="text-white mb-4">Guru BK</p>
-                            <a class="btn btn-secondary rounded-pill py-2 px-4" href="">Read More</a>
+                            <a class="btn btn-secondary rounded-pill py-2 px-4" href=""></a>
                         </div>
                     </div>
                 </div>
@@ -303,7 +292,7 @@
                         <div class="col-sm-8">
                             <h2 class="text-white mb-3">Ernesta Panjaitan, S.TH</h2>
                             <p class="text-white mb-4">Guru BP</p>
-                            <a class="btn btn-secondary rounded-pill py-2 px-4" href="">Read More</a>
+                            <a class="btn btn-secondary rounded-pill py-2 px-4" href=""></a>
                         </div>
                     </div>
                 </div>

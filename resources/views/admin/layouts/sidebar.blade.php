@@ -30,6 +30,16 @@
 
     <!-- Template Stylesheet -->
     <link href="{{ asset('template/css/style.css') }}" rel="stylesheet">
+
+    <style>
+    .h {
+        transition: ease-in-out 0.15s;
+    }
+    .h:hover {
+        color: #EB1616;
+        transition: ease-in-out 0.15s;
+    }
+    </style>
 </head>
 
 <body>
@@ -49,7 +59,8 @@
                 <a href="{{ route('dashboard') }}" class="navbar-brand mb-3" style="display:flex;">
                 <img src="{{ asset('gambar/trackrecordbklogo.jpeg') }}" width="50px"><h3 class="text-primary" style="margin-top:10px;">&nbsp;&nbsp;Track Record</h3>
                 </a>
-                <div class="d-flex align-items-center ms-4 mb-4">
+                <a href="{{ route('profil') }}" class="text-reset text-decoration-none">
+                <div class="d-flex align-items-center ms-4 mb-4 h">
                     <div class="position-relative">
                         <img class="rounded-circle" src="{{ asset('foto') }}/{{ Auth::user()->foto }}" alt="" style="width: 40px; height: 40px;">
                         <div class="bg-success rounded-circle border border-2 border-white position-absolute end-0 bottom-0 p-1"></div>
@@ -59,27 +70,27 @@
                         <span>Admin</span>
                     </div>
                 </div>
+                </a>
                 <div class="navbar-nav w-100">
-                    <a href="{{ route('dashboard') }}" class="nav-item nav-link active"><i class="fa fa-tachometer-alt me-2"></i>Beranda</a>
+                    <a href="{{ route('dashboard') }}" class="nav-item nav-link"><i class="fa fa-tachometer-alt me-2"></i>Beranda</a>
                     <div class="nav-item dropdown">
                         <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown"><i class="fa fa-table me-2"></i> Data </a>
                         <div class="dropdown-menu bg-transparent border-0">
-                            <a href="#1" class="dropdown-item">Data Pengunjung</a>
-                            <a href="#2" class="dropdown-item">Data Konselor</a>
-                            <a href="#3" class="dropdown-item" style="width:220px;">Data Laporan Keluhan</a>
+                            <a href="{{ route('peng') }}" class="dropdown-item">Data Pengunjung</a>
+                            <a href="{{ route('kon') }}" class="dropdown-item">Data Konselor</a>
+                            <a href="{{ route('lap') }}" class="dropdown-item" style="width:220px;">Data Laporan Keluhan</a>
                         </div>
                     </div>
                     <div class="nav-item dropdown">
                         <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown"><i class="far fa-file-alt me-2"></i>Form</a>
                         <div class="dropdown-menu bg-transparent border-0">
-                            <a href="#1" class="dropdown-item" style="width:230px;">Form Data Pengunjung</a>
-                            <a href="#2" class="dropdown-item" style="width:230px;">Form Data Konselor</a>
-                            <a href="#3" class="dropdown-item" style="width:240px;">Form Data Laporan Keluhan</a>
-                            <a href="#4" class="dropdown-item" style="width:230px;">Form Jam Bertugas</a>
-                            <a href="#5" class="dropdown-item" style="width:230px;">Form Kategori Keluhan</a>
+                            <a href="{{ route('penginput') }}" class="dropdown-item" style="width:230px;">Form Data Pengunjung</a>
+                            <a href="{{ route('koninput') }}" class="dropdown-item" style="width:230px;">Form Data Konselor</a>
+                            <a href="{{ route('jadinput') }}" class="dropdown-item" style="width:230px;">Form Jam Bertugas</a>
+                            <a href="{{ route('katinput') }}" class="dropdown-item" style="width:230px;">Form Kategori Keluhan</a>
                         </div>
                     </div>
-                    <a href="{{ asset('template/form.html') }}" class="nav-item nav-link" style="width:211px;"><i class="fa fa-keyboard me-2"></i>Jadwal Bertugas</a>
+                    <a href="{{ route('jad') }}" class="nav-item nav-link" style="width:211px;"><i class="fa fa-keyboard me-2"></i>Jadwal Bertugas</a>
                     <a href="{{ route('cat') }}" class="nav-item nav-link"><i class="fa fa-th me-2"></i>Catatan</a>
                     <a href="{{ route('adm') }}" class="nav-item nav-link"><i class="fa fa-laptop me-2"></i>Admin</a>
                     <!-- <a href="chart.html" class="nav-item nav-link"><i class="fa fa-chart-bar me-2"></i>Charts</a> -->

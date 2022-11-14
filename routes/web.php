@@ -68,3 +68,48 @@ Route::group(['prefix'=>'admins'], function(){
     Route::get('/', 'AdminController@index')->name('adm')->middleware('auth');
     Route::delete('/delete/{id}', 'AdminController@delete')->name('admdelete')->middleware('auth');
 });
+
+Route::group(['prefix'=>'kategori'], function(){
+    Route::get('/', 'KategoriController@index')->name('kat')->middleware('auth');
+    Route::get('/input', 'KategoriController@input')->name('katinput')->middleware('auth');
+    Route::post('/tambah', 'KategoriController@tambah')->name('kattambah')->middleware('auth');
+    Route::get('/edit/{id}', 'KategoriController@edit')->name('katedit')->middleware('auth');
+    Route::post('/update/{id}', 'KategoriController@update')->name('katupdate')->middleware('auth');
+    Route::delete('/delete/{id}', 'KategoriController@delete')->name('katdelete')->middleware('auth');
+});
+
+Route::group(['prefix'=>'pengunjung'], function(){
+    Route::get('/', 'PengunjungController@index')->name('peng')->middleware('auth');
+    Route::get('/input', 'PengunjungController@input')->name('penginput')->middleware('auth');
+    Route::post('/tambah', 'PengunjungController@tambah')->name('pengtambah')->middleware('auth');
+    Route::get('/edit/{id}', 'PengunjungController@edit')->name('pengedit')->middleware('auth');
+    Route::post('/update/{id}', 'PengunjungController@update')->name('pengupdate')->middleware('auth');
+    Route::delete('/delete/{id}', 'PengunjungController@delete')->name('pengdelete')->middleware('auth');
+});
+
+Route::group(['prefix'=>'konselor'], function(){
+    Route::get('/', 'KonselorController@index')->name('kon')->middleware('auth');
+    Route::get('/input', 'KonselorController@input')->name('koninput')->middleware('auth');
+    Route::post('/tambah', 'KonselorController@tambah')->name('kontambah')->middleware('auth');
+    Route::get('/edit/{id}', 'KonselorController@edit')->name('konedit')->middleware('auth');
+    Route::post('/update/{id}', 'KonselorController@update')->name('konupdate')->middleware('auth');
+    Route::delete('/delete/{id}', 'KonselorController@delete')->name('kondelete')->middleware('auth');
+});
+
+Route::group(['prefix'=>'laporan'], function(){
+    Route::get('/', 'LaporanController@index')->name('lap')->middleware('auth');
+    Route::get('/input/{id}', 'LaporanController@input')->name('lapinput')->middleware('auth');
+    Route::post('/tambah', 'LaporanController@tambah')->name('laptambah')->middleware('auth');
+    Route::get('/edit/{id}', 'LaporanController@edit')->name('lapedit')->middleware('auth');
+    Route::post('/update/{id}', 'LaporanController@update')->name('lapupdate')->middleware('auth');
+    Route::delete('/delete/{id}', 'LaporanController@delete')->name('lapdelete')->middleware('auth');
+});
+
+Route::group(['prefix'=>'jadwal'], function(){
+    Route::get('/', 'JadwalController@index')->name('jad')->middleware('auth');
+    Route::get('/input', 'JadwalController@input')->name('jadinput')->middleware('auth');
+    Route::post('/tambah', 'JadwalController@tambah')->name('jadtambah')->middleware('auth');
+    Route::get('/edit/{id}', 'JadwalController@edit')->name('jadedit')->middleware('auth');
+    Route::post('/update/{id}', 'JadwalController@update')->name('jadupdate')->middleware('auth');
+    Route::delete('/delete/{id}', 'JadwalController@delete')->name('jaddelete')->middleware('auth');
+});

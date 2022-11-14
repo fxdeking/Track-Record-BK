@@ -3,56 +3,53 @@
 <div class="container-fluid pt-4 px-4">
     <div class="bg-secondary rounded p-4">
         <div class="d-flex align-items-center justify-content-between mb-4">
-            <h3 class="mb-0" style="color:red;">Admin</h4>
+            <h3 class="mb-0" style="color:red;">Data Konselor</h4>
         </div>
         @if(Session::has('message'))
         <p class="alert alert-success alert-dismissable">{{ Session::get('message') }} <button type="button"
                 class="close" data-dismiss="alert" aria-hidden="true">&times;</button></p>
         @endif
-        <br>
+        <a href="{{ route('koninput') }}" class="btn btn-success">Tambah Data Konselor</a><br><br>
         <div class="table-responsive">
             <table class="table align-middle table-hover mb-0">
                 <thead>
                     <tr class="text-white">
-                        <th scope="col" style="text-align:center;width:15%;">No.</th>
-                        <th scope="col" style="text-align:center;">Nama Admin</th>
-                        <th scope="col" style="text-align:center;">Email Admin</th>
-                        <th scope="col" style="text-align:center;">Nomor Telepon Admin</th>
-                        <th scope="col" style="text-align:center;width:15%;">Aksi</th>
+                        <th scope="col" style="text-align:center;width:5%;">No.</th>
+                        <th scope="col" style="text-align:center;">Nama</th>
+                        <th scope="col" style="text-align:center;">Jenis Kelamin</th>
+                        <th scope="col" style="text-align:center;">Nomor Telepon</th>
+                        <th scope="col" style="text-align:center;">Jam Bertugas</th>
+                        <th scope="col" colspan="2" style="text-align:center;width:15%;">Aksi</th>
                     </tr>
                 </thead>
                 <tbody>
-                @if(count($admins)>0)
-                @foreach ($admins as $admin)
+                @if(count($konselors)>0)
+                @foreach ($konselors as $konselor)
                     <tr>
                         <td style="text-align:center;">{{ $loop->iteration }}</td>
-                        <td style="text-align:center;">{{ $admin->name }}</td>
-                        <td style="text-align:center;">{{ $admin->email }}</td>
-                        <td style="text-align:center;">{{ $admin->telepon }}</td>
-                        <td style="text-align:center;"><button type="button" class="btn btn-sm btn-primary" data-toggle="modal" data-target="#exampleModal{{$admin->id}}">Hapus</button></td>
+                        <td style="text-align:center;">{{ $konselor->jadwal->nama }}</td>
+                        <td style="text-align:center;">{{ $konselor->jk }}</td>
+                        <td style="text-align:center;">{{ $konselor->notelp }}</td>
+                        <td style="text-align:center;">{{ $konselor->jadwal->jammulai }} - {{ $konselor->jadwal->jamselesai }}</td>
+                        <td style="text-align:center;"><a class="btn btn-sm btn-primary" href="{{ route('konedit', [$konselor->id]) }}">Ubah</a></td>
+                        <td style="text-align:center;"><button type="button" class="btn btn-sm btn-primary" data-toggle="modal" data-target="#exampleModal{{$konselor->id}}">Hapus</button></td>
                     </tr>
 
-                    <div class="modal fade" id="exampleModal{{$admin->id}}" tabindex="-1" role="dialog"
+                    <div class="modal fade" id="exampleModal{{$konselor->id}}" tabindex="-1" role="dialog"
                         aria-labelledby="exampleModalLabel" aria-hidden="true">
                         <div class="modal-dialog" role="document">
-                            <form action="{{ route('admdelete', [$admin->id]) }}" method="POST">@csrf
+                            <form action="{{ route('kondelete', [$konselor->id]) }}" method="POST">@csrf
                                 {{method_field('DELETE')}}
                                 <div class="modal-content bg-secondary bg-gradient">
                                     <div class="modal-header" style="display:flex;">
-                                        <h5 class="modal-title" id="exampleModalLabel">Hapus Admin</h5>
+                                        <h5 class="modal-title" id="exampleModalLabel">Hapus Data Konselor</h5>
                                         <button type="button" class="close text-white" data-dismiss="modal" aria-label="Close">
                                             <span aria-hidden="true">&times;</span>
                                         </button>
                                     </div>
-                                    @if (($admin->id) == Auth::user()->id)
-                                    <div class="modal-body">
-                                        Apakah Anda Yakin ?<br><br><p class="text-danger"><b>(Akun admin ini sedang digunakan, jika ingin menghapusnya anda harus mendaftar ulang)</b></p>
-                                    </div>
-                                    @else
                                     <div class="modal-body">
                                         Apakah Anda Yakin ?
                                     </div>
-                                    @endif
                                     <div class="modal-footer">
                                         <button type="button" class="btn btn-secondary"
                                             data-dismiss="modal">Tutup</button>
@@ -63,6 +60,8 @@
                         </div>
                     </div>
                 @endforeach
+                @else
+                <td style="text-align:center;" colspan="6">Tidak ada data konselor yang bisa ditampilkan.</td>
                 @endif
                 </tbody>
             </table>

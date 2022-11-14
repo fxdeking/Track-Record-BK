@@ -7,6 +7,9 @@ use Illuminate\Support\ServiceProvider;
 use Illuminate\Support\Facades\Schema;
 use Illuminate\Support\Facades\Auth;
 use App\Models\Catatan;
+use App\Models\Kategori;
+use App\Models\Pengunjung;
+use App\Models\Laporan;
 use DB;
 
 class AppServiceProvider extends ServiceProvider
@@ -30,5 +33,14 @@ class AppServiceProvider extends ServiceProvider
     {
         $catats = Catatan::with('user')->get();
         View::share('catats',$catats);
+
+        $kategoris = Kategori::get();
+        View::share('kategoris',$kategoris);
+
+        $pengunjungs = Pengunjung::get();
+        View::share('pengunjungs',$pengunjungs);
+
+        $laporans = Laporan::get();
+        View::share('laporans',$laporans);
     }
 }

@@ -4,7 +4,7 @@ use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
 
-class CreateCatatansTable extends Migration
+class CreateJadwalsTable extends Migration
 {
     /**
      * Run the migrations.
@@ -13,12 +13,12 @@ class CreateCatatansTable extends Migration
      */
     public function up()
     {
-        Schema::create('catatans', function (Blueprint $table) {
+        Schema::create('jadwals', function (Blueprint $table) {
             $table->id();
-            $table->string('nama', 50);
-            $table->string('catatan', 100);
-            $table->unsignedBigInteger('user_id');
-            $table->foreign('user_id')->references('id')->on('users')->onDelete('cascade');
+            $table->string('nama', 100);
+            $table->string('hari');
+            $table->string('jammulai');
+            $table->string('jamselesai');
             $table->timestamps();
         });
     }
@@ -30,6 +30,6 @@ class CreateCatatansTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('catatans');
+        Schema::dropIfExists('jadwals');
     }
 }
