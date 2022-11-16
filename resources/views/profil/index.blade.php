@@ -5,7 +5,7 @@
         <h3 class="mb-0" style="color:red;text-align:center;">Profil Anda</h3>
         <br><br>
         <div style="text-align:center;">
-            <img class="rounded-circle" src="{{ asset('foto') }}/{{ Auth::user()->foto }}" alt="" style="width: 200px; height: 200px;">
+            <img class="rounded-circle" src="@if ((Auth::user()->foto) == '') {{ asset('foto/default.png') }} @else {{ asset('foto') }}/{{ Auth::user()->foto }} @endif" alt="" style="width: 200px; height: 200px;">
         </div>
         <br><br>
         @if(Session::has('message'))

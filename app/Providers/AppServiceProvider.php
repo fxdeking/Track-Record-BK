@@ -11,6 +11,7 @@ use App\Models\Kategori;
 use App\Models\Pengunjung;
 use App\Models\Laporan;
 use App\Models\Konselor;
+use App\Models\Jadwal;
 use DB;
 
 class AppServiceProvider extends ServiceProvider
@@ -46,5 +47,8 @@ class AppServiceProvider extends ServiceProvider
 
         $konselors = Konselor::get();
         View::share('konselors',$konselors);
+
+        $jadwals = Jadwal::get();
+        View::share('jadwals',$jadwals);
     }
 }

@@ -83,7 +83,6 @@
                             </div>
                         </div>
                         <button type="submit" class="btn btn-primary py-3 w-100 mb-4">Masuk</button>
-                        <p class="text-center mb-0">Tidak Punya Akun? <a href="{{ route('register') }}">Daftar</a></p>
                     </div>
                     </form>
                 </div>

@@ -21,7 +21,7 @@
                         @if(count($catats)>0)
                         @foreach ($catats as $catat)
                                 <div class="d-flex align-items-center" style="padding:0 15px 0 15px;width:250px;">
-                                    <img class="rounded-circle" src="{{ asset('foto') }}/{{ $catat->user->foto }}" alt="" style="width: 40px; height: 40px;">
+                                    <img class="rounded-circle" src="@if ((Auth::user()->foto) == '') {{ asset('foto/default.png') }} @else {{ asset('foto') }}/{{ Auth::user()->foto }} @endif" alt="" style="width: 40px; height: 40px;">
                                     <div class="ms-2">
                                         <h6 class="fw-normal mb-0">{{ $catat->nama }}</h6>
                                         <small>{{ $catat->catatan }}</small>
@@ -63,7 +63,7 @@
                     </div>
                     <div class="nav-item dropdown">
                         <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">
-                                <img class="rounded-circle me-lg-2" src="{{ asset('foto') }}/{{ Auth::user()->foto }}" alt="" style="width: 40px; height: 40px;">
+                                <img class="rounded-circle me-lg-2" src="@if ((Auth::user()->foto) == '') {{ asset('foto/default.png') }} @else {{ asset('foto') }}/{{ Auth::user()->foto }} @endif" alt="" style="width: 40px; height: 40px;">
                             <span class="d-none d-lg-inline-flex">{{ Auth::user()->name }}</span>
                         </a>
                         <div class="dropdown-menu dropdown-menu-end bg-secondary border-0 rounded-0 rounded-bottom m-0">

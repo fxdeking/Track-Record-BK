@@ -52,7 +52,6 @@
             <div class="navbar-nav ms-auto p-4 p-lg-0">
                 <a href="{{ url('/') }}" class="nav-item nav-link active">Home</a>
                 <a href="{{ route('tentang') }}" class="nav-item nav-link">Tentang Kami</a>
-                <a href="{{ route('login') }}" class="nav-item nav-link">Login</a>
             </div>
         </div>
     </nav>
@@ -70,7 +69,7 @@
                             <div class="row justify-content-start">
                                 <div class="col-lg-8 text-start">
                                     <p class="fs-4 text-white">Selamat datang ke website</p>
-                                    <h1 class="display-1 text-white mb-5 animated slideInRight">Bimbingan Konselimg</h1>
+                                    <h1 class="display-1 text-white mb-5 animated slideInRight">Bimbingan Konseling</h1>
                                     <a href="" class="btn btn-secondary rounded-pill py-3 px-5 animated slideInRight"></a>
                                 </div>
                             </div>
@@ -84,7 +83,7 @@
                             <div class="row justify-content-end">
                                 <div class="col-lg-8 text-end">
                                     <p class="fs-4 text-white">Berfokus pada</p>
-                                    <h1 class="display-1 text-white mb-5 animated slideInRight">pengembangan perilaku baik siswa</h1>
+                                    <h1 class="display-1 text-white mb-5 animated slideInRight">Pengembangan Perilaku Baik Siswa</h1>
                                     <a href="" class="btn btn-secondary rounded-pill py-3 px-5 animated slideInLeft"></a>
                                 </div>
                             </div>
@@ -301,6 +300,37 @@
     </div>
     <!-- Banner End -->
 
+    <div class="text-center mx-auto wow fadeInUp" data-wow-delay="0.1s" style="max-width: 500px;">
+        <p class="section-title bg-white text-center text-primary px-3">Bimbingan Konseling</p>
+        <h1 class="mb-5">Jadwal Konseling</h1>
+    </div>
+    <center>
+    <div class="table-responsive">
+            <table class="table align-middle table-hover mb-0" width="100%">
+                <thead>
+                    <tr class="text-black">
+                        <th scope="col" style="text-align:center;">No.</th>
+                        <th scope="col" style="text-align:center;">Nama Konselor</th>
+                        <th scope="col" style="text-align:center;">Hari Bertugas</th>
+                        <th scope="col" style="text-align:center;">Jam Bertugas</th>
+                    </tr>
+                </thead>
+                <tbody>
+                @if(count($jadwals)>0)
+                @foreach ($jadwals as $jadwal)
+                    <tr>
+                        <td style="text-align:center;">{{ $loop->iteration }}</td>
+                        <td style="text-align:center;">{{ $jadwal->nama }}</td>
+                        <td style="text-align:center;">{{ $jadwal->hari }}</td>
+                        <td style="text-align:center;">{{ $jadwal->jammulai }} - {{ $jadwal->jamselesai }}</td>
+                @endforeach
+                @else
+                <td style="text-align:center;" colspan="5"><p style="text-align:center;">Tidak ada jadwal yang bisa ditampilkan.</p></td>
+                @endif
+                </tbody>
+            </table>
+        </div>
+    </center>
 
     <!-- Service Start -->
     <div class="container-xxl py-5">
