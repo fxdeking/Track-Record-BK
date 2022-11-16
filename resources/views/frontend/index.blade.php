@@ -52,7 +52,6 @@
             <div class="navbar-nav ms-auto p-4 p-lg-0">
                 <a href="index.html" class="nav-item nav-link active">Home</a>
                 <a href="{{ route('tentang') }}" class="nav-item nav-link">Tentang Kami</a>
-                <a href="{{ route('dashboard') }}" class="nav-item nav-link">Login</a>
             </div>
         </div>
     </nav>
@@ -280,7 +279,7 @@
                         <div class="col-sm-8">
                             <h2 class="text-white mb-3">Rizky Mulyadi, S.PD.</h2>
                             <p class="text-white mb-4">Guru BK</p>
-                            <a class="btn btn-secondary rounded-pill py-2 px-4" href=""></a>
+                            <a class="btn btn-secondary rounded-pill py-2 px-4" href="tel:+62 877-6025-1212">+62 877-6025-1212</a>
                         </div>
                     </div>
                 </div>
@@ -292,7 +291,7 @@
                         <div class="col-sm-8">
                             <h2 class="text-white mb-3">Ernesta Panjaitan, S.TH</h2>
                             <p class="text-white mb-4">Guru BP</p>
-                            <a class="btn btn-secondary rounded-pill py-2 px-4" href=""></a>
+                            <a class="btn btn-secondary rounded-pill py-2 px-4" href="tel:+62 813-8016-7713">+62 813-8016-7713</a>
                         </div>
                     </div>
                 </div>

@@ -24,7 +24,7 @@ Route::get('/tentang', function () {
     return view('frontend.about');
 })->name('tentang');
 
-Route::get('/admin/login', function () {
+Route::get('/login', function () {
     return view('auth.login');
 });
 

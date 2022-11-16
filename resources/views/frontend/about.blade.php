@@ -52,7 +52,6 @@
             <div class="navbar-nav ms-auto p-4 p-lg-0">
                 <a href="{{ url('/') }}" class="nav-item nav-link active">Home</a>
                 <a href="{{ route('tentang') }}" class="nav-item nav-link">Tentang Kami</a>
-                <a href="{{ route('dashboard') }}" class="nav-item nav-link">Login</a>
             </div>
         </div>
     </nav>
