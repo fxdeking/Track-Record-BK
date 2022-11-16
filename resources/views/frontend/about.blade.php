@@ -50,8 +50,9 @@
         </button>
         <div class="collapse navbar-collapse" id="navbarCollapse">
             <div class="navbar-nav ms-auto p-4 p-lg-0">
-                <a href="{{ url('/') }}" class="nav-item nav-link active">Home</a>
-                <a href="{{ route('tentang') }}" class="nav-item nav-link">Tentang Kami</a>
+                <a href="{{ url('/') }}" class="nav-item nav-link">Home</a>
+                <a href="{{ route('tentang') }}" class="nav-item nav-link active">Tentang Kami</a>
+                <a href="{{ route('login') }}" class="nav-item nav-link">Login</a>
             </div>
         </div>
     </nav>
