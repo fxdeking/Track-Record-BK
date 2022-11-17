@@ -70,7 +70,7 @@
                                 <div class="col-lg-8 text-start">
                                     <p class="fs-4 text-white">Selamat datang ke website</p>
                                     <h1 class="display-1 text-white mb-5 animated slideInRight">Bimbingan Konseling</h1>
-                                    <a href="" class="btn btn-secondary rounded-pill py-3 px-5 animated slideInRight"></a>
+                                    <a class="btn btn-secondary rounded-pill py-3 px-5 animated slideInRight"></a>
                                 </div>
                             </div>
                         </div>
@@ -84,7 +84,7 @@
                                 <div class="col-lg-8 text-end">
                                     <p class="fs-4 text-white">Berfokus pada</p>
                                     <h1 class="display-1 text-white mb-5 animated slideInRight">Pengembangan Perilaku Baik Siswa</h1>
-                                    <a href="" class="btn btn-secondary rounded-pill py-3 px-5 animated slideInLeft"></a>
+                                    <a class="btn btn-secondary rounded-pill py-3 px-5 animated slideInLeft"></a>
                                 </div>
                             </div>
                         </div>
@@ -162,7 +162,7 @@
                     <p><i class="fa fa-check text-primary me-3"></i>Merencanakan kegiatan penyelesaian studi, perkembangan karir, dan juga kehidupan peserta didik di masa depan.</p>
                     <p><i class="fa fa-check text-primary me-3"></i>Menyesuaikan diri dengan lingkungan pendidikan dan juga lingkungan masyarakat</p>
                     <p><i class="fa fa-check text-primary me-3"></i>Mengetahui kesulitan dan juga hambatan yang dihadapi oleh siswa dalam studi, penyesuaian diri dengan lingkungan pendidikan yang ada di masyarakat</p>
-                    <a class="btn btn-secondary rounded-pill py-3 px-5 mt-3" href=""></a>
+                    <a class="btn btn-secondary rounded-pill py-3 px-5 mt-3"></a>
                 </div>
                 <div class="col-lg-6">
                     <div class="rounded overflow-hidden">
