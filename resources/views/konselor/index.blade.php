@@ -18,7 +18,6 @@
                         <th scope="col" style="text-align:center;">Nama</th>
                         <th scope="col" style="text-align:center;">Jenis Kelamin</th>
                         <th scope="col" style="text-align:center;">Nomor Telepon</th>
-                        <th scope="col" style="text-align:center;">Jam Bertugas</th>
                         <th scope="col" colspan="2" style="text-align:center;width:15%;">Aksi</th>
                     </tr>
                 </thead>
@@ -27,10 +26,9 @@
                 @foreach ($konselors as $konselor)
                     <tr>
                         <td style="text-align:center;">{{ $loop->iteration }}</td>
-                        <td style="text-align:center;">{{ $konselor->jadwal->nama }}</td>
+                        <td style="text-align:center;">{{ $konselor->nama }}</td>
                         <td style="text-align:center;">{{ $konselor->jk }}</td>
                         <td style="text-align:center;">{{ $konselor->notelp }}</td>
-                        <td style="text-align:center;">{{ $konselor->jadwal->jammulai }} - {{ $konselor->jadwal->jamselesai }}</td>
                         <td style="text-align:center;"><a class="btn btn-sm btn-primary" href="{{ route('konedit', [$konselor->id]) }}">Ubah</a></td>
                         <td style="text-align:center;"><button type="button" class="btn btn-sm btn-primary" data-toggle="modal" data-target="#exampleModal{{$konselor->id}}">Hapus</button></td>
                     </tr>

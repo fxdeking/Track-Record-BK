@@ -15,7 +15,8 @@ class CreateJadwalsTable extends Migration
     {
         Schema::create('jadwals', function (Blueprint $table) {
             $table->id();
-            $table->string('nama', 100);
+            $table->unsignedBigInteger('konselor_id');
+            $table->foreign('konselor_id')->references('id')->on('konselors')->onDelete('cascade');
             $table->string('hari');
             $table->string('jammulai');
             $table->string('jamselesai');

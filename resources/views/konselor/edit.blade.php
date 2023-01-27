@@ -10,18 +10,17 @@
                 class="close" data-dismiss="alert" aria-hidden="true">&times;</button></p>
         @endif
         <form action="{{ route('konupdate', [$konselor->id]) }}" method="POST">@csrf
-        <div class="mb-3">
-                <select class="form-select mb-3 p-3" aria-label="Default select example" name="jadwal_id">
-                    @foreach(App\Models\Jadwal::all() as $jadwal)
-                    <option value="{{ $jadwal->id }}" {{ ($konselor->jadwal_id=="$jadwal->id")? "selected" : "" }}>{{ $jadwal->nama }}</option>
-                    @endforeach
-                </select>
-                @error('jadwal_id')
+        <div class="form-floating mb-3">
+                <input id="nama" type="text" class="form-control @error('nama') is-invalid @enderror" name="nama"
+                    value="{{ $konselor->nama }}" id="floatingInput" placeholder="name@example.com"
+                    autocomplete="nama" autofocus>
+                <label for="floatingInput">Nama Konselor</label>
+                @error('nama')
                 <span class="invalid-feedback" role="alert">
                     <strong>{{ $message }}</strong>
                 </span>
                 @enderror
-            </div>
+        </div>
 
             <div class="form-floating mb-3">
                 <p class="bg-primary rounded p-3">Jenis Kelamin</p>

@@ -17,8 +17,7 @@ class CreateKonselorsTable extends Migration
             $table->id();
             $table->enum('jk', ['Laki-laki', 'Perempuan']);
             $table->integer('notelp');
-            $table->unsignedBigInteger('jadwal_id');
-            $table->foreign('jadwal_id')->references('id')->on('jadwals')->onDelete('cascade');
+            $table->string('nama', 50);
             $table->timestamps();
         });
     }

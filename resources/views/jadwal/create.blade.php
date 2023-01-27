@@ -10,16 +10,19 @@
                 class="close" data-dismiss="alert" aria-hidden="true">&times;</button></p>
         @endif
         <form action="{{ route('jadtambah') }}" method="POST">@csrf
-            <div class="form-floating mb-3">
-                <input id="nama" type="text" class="form-control @error('nama') is-invalid @enderror" name="nama"
-                    value="{{ old('nama') }}" id="floatingInput" placeholder="name@example.com"
-                    autocomplete="nama" autofocus>
-                <label for="floatingInput">Nama Konselor</label>
-                @error('nama')
+        <div class="mb-3">
+                <select class="form-select mb-3 p-3" aria-label="Default select example" name="konselor_id">
+                    <option value="" selected>Pilih Nama Konselor</option>
+                    @foreach(App\Models\Konselor::all() as $konselor)
+                    <option value="{{ $konselor->id }}" @if(old('konselor_id')) selected @endif>{{ $konselor->nama }}</option>
+                    @endforeach
+                </select>
+                @error('konselor_id')
                 <span class="invalid-feedback" role="alert">
                     <strong>{{ $message }}</strong>
                 </span>
                 @enderror
+                <p class="text-info ml-1">Jika nama tidak ada, tambah data konselor terlebih dahulu</p>
             </div>
             
             <div class="form-floating mb-3">

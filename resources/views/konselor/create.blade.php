@@ -10,19 +10,16 @@
                 class="close" data-dismiss="alert" aria-hidden="true">&times;</button></p>
         @endif
         <form action="{{ route('kontambah') }}" method="POST">@csrf
-        <div class="mb-3">
-                <select class="form-select mb-3 p-3" aria-label="Default select example" name="jadwal_id">
-                    <option value="" selected>Pilih Nama Konselor</option>
-                    @foreach(App\Models\Jadwal::all() as $jadwal)
-                    <option value="{{ $jadwal->id }}">{{ $jadwal->nama }}</option>
-                    @endforeach
-                </select>
-                @error('jadwal_id')
+            <div class="form-floating mb-3">
+                <input id="nama" type="text" class="form-control @error('nama') is-invalid @enderror" name="nama"
+                    value="{{ old('nama') }}" id="floatingInput" placeholder="name@example.com"
+                    autocomplete="nama" autofocus>
+                <label for="floatingInput">Nama Konselor</label>
+                @error('nama')
                 <span class="invalid-feedback" role="alert">
                     <strong>{{ $message }}</strong>
                 </span>
                 @enderror
-                <p class="text-info ml-1">Jika nama tidak ada, isi jadwal bertugas terlebih dahulu</p>
             </div>
             <br>
             <div class="form-floating mb-3">

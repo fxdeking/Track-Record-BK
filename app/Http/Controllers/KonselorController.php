@@ -20,16 +20,19 @@ class KonselorController extends Controller
         $this->validate($request,[
             'jk'=>'required',
             'notelp'=>'required|min:3|max:20',
-            'jadwal_id'=>'required'
+            'nama'=>'required|min:3|max:35'
         ], ['jk.required'=>'Isi jenis kelamin konselor terlebih dahulu',
             'notelp.required'=>'Isi nomor telepon konselor terlebih dahulu',
             'notelp.min'=>'Minimal 3 karakter',
-            'notelp.max'=>'Maksimal 20 karakter']);
+            'notelp.max'=>'Maksimal 20 karakter',
+            'nama.required'=>'Isi nama konselor terlebih dahulu',
+            'nama.min'=>'Minimal 3 karakter',
+            'nama.max'=>'Maksimal 35 karakter']);
 
             Konselor::create([
                 'jk'=>$request->get('jk'),
                 'notelp'=>$request->get('notelp'),
-                'jadwal_id'=>$request->get('jadwal_id')
+                'nama'=>$request->get('nama')
             ]);
     
             return redirect()->route('kon')->with('message', 'Data Konselor Berhasil Disimpan');
@@ -44,16 +47,19 @@ class KonselorController extends Controller
         $this->validate($request,[
             'jk'=>'required',
             'notelp'=>'required|min:3|max:20',
-            'jadwal_id'=>'required'
+            'nama'=>'required|min:3|max:35'
         ], ['jk.required'=>'Isi jenis kelamin konselor terlebih dahulu',
             'notelp.required'=>'Isi nomor telepon konselor terlebih dahulu',
             'notelp.min'=>'Minimal 3 karakter',
-            'notelp.max'=>'Maksimal 20 karakter']);
+            'notelp.max'=>'Maksimal 20 karakter',
+            'nama.required'=>'Isi nama konselor terlebih dahulu',
+            'nama.min'=>'Minimal 3 karakter',
+            'nama.max'=>'Maksimal 35 karakter']);
 
             Konselor::find($id)->update([
                 'jk'=>$request->get('jk'),
                 'notelp'=>$request->get('notelp'),
-                'jadwal_id'=>$request->get('jadwal_id')
+                'nama'=>$request->get('nama')
             ]);
     
             return redirect()->route('kon')->with('message', 'Data Konselor Berhasil Diubah');

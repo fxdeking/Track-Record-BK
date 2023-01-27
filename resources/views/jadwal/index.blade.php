@@ -26,7 +26,7 @@
                 @foreach ($jadwals as $jadwal)
                     <tr>
                         <td style="text-align:center;">{{ $loop->iteration }}</td>
-                        <td style="text-align:center;">{{ $jadwal->nama }}</td>
+                        <td style="text-align:center;">{{ $jadwal->konselor->nama }}</td>
                         <td style="text-align:center;">{{ $jadwal->hari }}</td>
                         <td style="text-align:center;">{{ $jadwal->jammulai }} - {{ $jadwal->jamselesai }}</td>
                         <td style="text-align:center;"><a class="btn btn-sm btn-primary" href="{{ route('jadedit', [$jadwal->id]) }}">Ubah</a></td>

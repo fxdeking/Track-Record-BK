@@ -18,18 +18,16 @@ class JadwalController extends Controller
 
     public function tambah(Request $request) {
         $this->validate($request,[
-            'nama'=>'required|min:3|max:50',
+            'konselor_id'=>'required',
             'hari'=>'required',
             'jammulai'=>'required',
             'jamselesai'=>'required'
-        ], ['nama.required'=>'Isi nama terlebih dahulu',
+        ], ['konselor_id.required'=>'Pilih nama konselor terlebih dahulu',
             'jammulai.required'=>'Isi jam mulai terlebih dahulu',
-            'jamselesai.required'=>'Isi jam selesai terlebih dahulu',
-            'nama.min'=>'Minimal 3 karakter',
-            'nama.max'=>'Maksimal 50 karakter']);
+            'jamselesai.required'=>'Isi jam selesai terlebih dahulu']);
 
             Jadwal::create([
-                'nama'=>$request->get('nama'),
+                'konselor_id'=>$request->get('konselor_id'),
                 'hari'=>implode(", ",$request->get('hari')),
                 'jammulai'=>$request->get('jammulai'),
                 'jamselesai'=>$request->get('jamselesai')
@@ -45,18 +43,16 @@ class JadwalController extends Controller
 
     public function update(Request $request, $id) {
         $this->validate($request,[
-            'nama'=>'required|min:3|max:50',
+            'konselor_id'=>'required',
             'hari'=>'required',
             'jammulai'=>'required',
             'jamselesai'=>'required'
-        ], ['nama.required'=>'Isi nama terlebih dahulu',
+        ], ['konselor_id.required'=>'Pilih nama konselor terlebih dahulu',
             'jammulai.required'=>'Isi jam mulai terlebih dahulu',
-            'jamselesai.required'=>'Isi jam selesai terlebih dahulu',
-            'nama.min'=>'Minimal 3 karakter',
-            'nama.max'=>'Maksimal 50 karakter']);
+            'jamselesai.required'=>'Isi jam selesai terlebih dahulu']);
 
             Jadwal::find($id)->update([
-                'nama'=>$request->get('nama'),
+                'konselor_id'=>$request->get('konselor_id'),
                 'hari'=>implode(", ",$request->get('hari')),
                 'jammulai'=>$request->get('jammulai'),
                 'jamselesai'=>$request->get('jamselesai')
