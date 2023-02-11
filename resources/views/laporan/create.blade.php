@@ -9,6 +9,12 @@
         <p class="alert alert-success alert-dismissable">{{ Session::get('message') }} <button type="button"
                 class="close" data-dismiss="alert" aria-hidden="true">&times;</button></p>
         @endif
+
+        @error('pengunjung_id')
+            <p class="alert alert-danger alert-dismissable">
+                {{ $message }} <button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>
+            </p>
+        @enderror
         <form action="{{ route('laptambah') }}" method="POST">@csrf
             <input type="hidden" name="pengunjung_id" value="{{ $pengunjung->id }}">
             <input type="hidden" name="kategori_id" value="{{ $pengunjung->kategori->id }}">

@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use Illuminate\Validation\Rule;
 use App\Models\Laporan;
 use App\Models\Pengunjung;
 
@@ -22,11 +23,12 @@ class LaporanController extends Controller
         $this->validate($request,[
             'keluhan'=>'required|min:3',
             'kunjungan'=>'required',
-            'pengunjung_id'=>'required',
+            'pengunjung_id'=>['required', Rule::unique('laporans')],
             'kategori_id'=>'required'
         ], ['keluhan.required'=>'Isi keluhan pengunjung terlebih dahulu',
             'kunjungan.required'=>'Isi waktu kunjungan terlebih dahulu',
-            'keluhan.min'=>'Minimal 3 karakter']);
+            'keluhan.min'=>'Minimal 3 karakter',
+            'pengunjung_id.unique'=>'Laporan pengunjung sudah ada']);
 
             Laporan::create([
                 'keluhan'=>$request->get('keluhan'),
@@ -37,6 +39,11 @@ class LaporanController extends Controller
             ]);
     
             return redirect()->route('lap')->with('message', 'Data Laporan Pengunjung Berhasil Disimpan');
+    }
+
+    public function detail(Request $request, $id) {
+        $laporan = Laporan::find($id);
+        return view ('laporan.detail', compact('laporan'));
     }
 
     public function edit(Request $request, $id) {

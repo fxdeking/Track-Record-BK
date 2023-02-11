@@ -89,7 +89,7 @@
             </div>
             
             <div class="mb-3">
-                <select class="form-select mb-3 p-3" aria-label="Default select example" name="kategori_id">
+                <select class="form-select mb-3 p-3" aria-label="Default select example" name="kategori_id" required>
                     <option value="" selected>Pilih Kategori Keluhan</option>
                     @foreach(App\Models\Kategori::all() as $kategori)
                     <option value="{{ $kategori->id }}">{{ $kategori->nama }}</option>

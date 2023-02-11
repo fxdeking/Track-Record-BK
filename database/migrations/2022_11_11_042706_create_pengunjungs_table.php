@@ -22,7 +22,7 @@ class CreatePengunjungsTable extends Migration
             $table->integer('usia');
             $table->enum('jk', ['Laki-laki', 'Perempuan']);
             $table->text('alamat');
-            $table->integer('notelp');
+            $table->string('notelp', 30);
             $table->timestamps();
         });
     }

@@ -41,8 +41,10 @@
 
     <!-- Navbar Start -->
     <nav class="navbar navbar-expand-lg bg-white navbar-light sticky-top px-4 px-lg-5">
+        <a href="{{  route('login') }}">
         <img src="img/logo-light.png" style="width: 100px;">
-        <a href="index.html" class="navbar-brand d-flex align-items-center">
+        </a>
+        <a href="{{ url('/') }}" class="navbar-brand d-flex align-items-center">
             <h1 class="m-0">Track Record BK</h1>
         </a>
         <button type="button" class="navbar-toggler me-0" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">

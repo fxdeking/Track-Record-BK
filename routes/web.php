@@ -4,6 +4,13 @@ use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\CatatanController;
 use App\Http\Controllers\CampurController;
 use App\Http\Controllers\ProfilController;
+use App\Http\Controllers\LaporanController;
+use App\Http\Controllers\TindakController;
+use App\Http\Controllers\AdminController;
+use App\Http\Controllers\KategoriController;
+use App\Http\Controllers\PengunjungController;
+use App\Http\Controllers\KonselorController;
+use App\Http\Controllers\JadwalController;
 
 /*
 |--------------------------------------------------------------------------
@@ -96,6 +103,7 @@ Route::group(['prefix'=>'laporan'], function(){
     Route::get('/', 'LaporanController@index')->name('lap')->middleware('auth');
     Route::get('/input/{id}', 'LaporanController@input')->name('lapinput')->middleware('auth');
     Route::post('/tambah', 'LaporanController@tambah')->name('laptambah')->middleware('auth');
+    Route::get('/detail/{id}', 'LaporanController@detail')->name('lapdetail')->middleware('auth');
     Route::get('/edit/{id}', 'LaporanController@edit')->name('lapedit')->middleware('auth');
     Route::post('/update/{id}', 'LaporanController@update')->name('lapupdate')->middleware('auth');
     Route::delete('/delete/{id}', 'LaporanController@delete')->name('lapdelete')->middleware('auth');
@@ -108,4 +116,11 @@ Route::group(['prefix'=>'jadwal'], function(){
     Route::get('/edit/{id}', 'JadwalController@edit')->name('jadedit')->middleware('auth');
     Route::post('/update/{id}', 'JadwalController@update')->name('jadupdate')->middleware('auth');
     Route::delete('/delete/{id}', 'JadwalController@delete')->name('jaddelete')->middleware('auth');
+});
+
+Route::group(['prefix'=>'tindakan'], function(){
+    Route::get('/input/{id}', 'TindakController@input')->name('tininput')->middleware('auth');
+    Route::post('/tambah', 'TindakController@tambah')->name('tintambah')->middleware('auth');
+    Route::get('/edit/{id}', 'TindakController@edit')->name('tinedit')->middleware('auth');
+    Route::post('/update/{id}', 'TindakController@update')->name('tinupdate')->middleware('auth');
 });

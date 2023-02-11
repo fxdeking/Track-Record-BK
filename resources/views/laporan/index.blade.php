@@ -13,13 +13,15 @@
             <table class="table align-middle table-hover mb-0">
                 <thead>
                     <tr class="text-white">
-                        <th scope="col" style="text-align:center;width:5%;">No.</th>
+                        <th scope="col" style="text-align:center;width:auto;">No.</th>
                         <th scope="col" style="text-align:center;width:15%;">Nama</th>
                         <th scope="col" style="text-align:center;width:13%;">Kategori Keluhan</th>
-                        <th scope="col" style="text-align:center;">Keluhan Pengunjung</th>
-                        <th scope="col" style="text-align:center;width:20%;">Waktu Kunjungan</th>
+                        <th scope="col" style="text-align:center;width:16%;">Keluhan Pengunjung</th>
+                        <th scope="col" style="text-align:center;width:14%;">Waktu Kunjungan</th>
                         <th scope="col" style="text-align:center;width:13%;">Durasi Konseling</th>
-                        <th scope="col" colspan="2" style="text-align:center;width:15%;">Aksi</th>
+                        <th scope="col" style="text-align:center;">Status</th>
+                        <th scope="col" style="text-align:center;width:auto;">Detail</th>
+                        <th scope="col" colspan="2" style="text-align:center;width:14%;">Aksi</th>
                     </tr>
                 </thead>
                 <tbody>
@@ -39,6 +41,20 @@
                         <td style="text-align:center;">{{ $laporan->keluhan }}</td>
                         <td style="text-align:center;">{{ $laporan->kunjungan }} - @if (($laporan->keluar) == '')Belum Diisi @else {{ $laporan->keluar }} @endif</td>
                         <td style="text-align:center;">{{ $durasi }}</td>
+                        <td style="text-align:center;">
+                        @if ($laporan->status == 'Belum')
+                        Belum Ada
+                        @elseif ($laporan->status == 'Proses')
+                        <button class="btn btn-sm btn-warning">
+                        {{ $laporan->status }}
+                        </button>
+                        @else
+                        <button class="btn btn-sm btn-success">
+                        {{ $laporan->status }}
+                        </button>
+                        @endif
+                        </td>
+                        <td style="text-align:center;"><a class="btn btn-sm btn-primary" href="{{ route('lapdetail', [$laporan->id]) }}"><i class="fa fa-eye fa-fw"></i></a></td>
                         <td style="text-align:center;"><a class="btn btn-sm btn-primary" href="{{ route('lapedit', [$laporan->id]) }}">Ubah</a></td>
                         <td style="text-align:center;"><button type="button" class="btn btn-sm btn-primary" data-toggle="modal" data-target="#exampleModal{{$laporan->id}}">Hapus</button></td>
                     </tr>
@@ -69,7 +85,7 @@
                     </div>
                 @endforeach
                 @else
-                <td style="text-align:center;" colspan="10">Tidak ada data laporan pengunjung yang bisa ditampilkan.</td>
+                <td style="text-align:center;" colspan="9">Tidak ada data laporan pengunjung yang bisa ditampilkan.</td>
                 @endif
                 </tbody>
             </table>

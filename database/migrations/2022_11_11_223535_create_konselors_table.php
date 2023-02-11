@@ -16,7 +16,7 @@ class CreateKonselorsTable extends Migration
         Schema::create('konselors', function (Blueprint $table) {
             $table->id();
             $table->enum('jk', ['Laki-laki', 'Perempuan']);
-            $table->integer('notelp');
+            $table->string('notelp', 30);
             $table->string('nama', 50);
             $table->timestamps();
         });

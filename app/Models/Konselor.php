@@ -14,4 +14,8 @@ class Konselor extends Model
     public function jadwal(){
         return $this->hasMany(Jadwal::class);
     }
+
+    public function tindak(){
+        return $this->hasMany(Tindak::class);
+    }
 }
